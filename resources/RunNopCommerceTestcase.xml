@@ -3,7 +3,14 @@
 	<test name="Run on Firefox">
 		<parameter name="browser" value="Firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_01_Register_login" />
+<!-- 			<class name="com.nopcommerce.user.Level_01_Register_login" /> -->
+			<class name ="javaBasic.Topic_08_Break_Continued" />
+		</classes>
+	</test>
+	<test name="Run on Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name ="javaBasic.Topic_08_Break_Continued" />
 		</classes>
 	</test>
 </suite>
