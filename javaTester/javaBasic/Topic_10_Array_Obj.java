@@ -27,7 +27,7 @@ public class Topic_10_Array_Obj {
 		int a = sc.nextInt();
 		float x = sc.nextFloat();
 		students[0] = new Topic_10_Array_Obj(name1, a, x);
-		students[1] = new Topic_10_Array_Obj("Dung", 34, 9.5f);
+		students[1] = new Topic_10_Array_Obj("Thao", 34, 9.5f);
 		students[2] = new Topic_10_Array_Obj("An", 35, 9.7f);
 		for (int i = 0; i < 3; i++) {
 			students[i].display();
