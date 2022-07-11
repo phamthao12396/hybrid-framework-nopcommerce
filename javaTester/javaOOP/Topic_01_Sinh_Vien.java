@@ -63,6 +63,6 @@ public class Topic_01_Sinh_Vien {
 		showSV(sv1.maSinhVien, sv1.hoTen, diemTrungBinh(sv1.diemLyThuyet, sv1.diemThucHanh));
 		showSV(sv2.maSinhVien, sv2.hoTen, diemTrungBinh(sv2.diemLyThuyet, sv2.diemThucHanh));
 		showSV(sv3.maSinhVien, sv3.hoTen, diemTrungBinh(sv3.diemLyThuyet, sv3.diemThucHanh));
-
+		System.out.println(" ");
 	}
 }
