@@ -2,6 +2,8 @@ package javaBasic;
 
 import java.util.Scanner;
 
+import javaOOP.Topic_01_Sinh_Vien;
+
 public class Topic_10_Array_Obj {
 
 	String name;
