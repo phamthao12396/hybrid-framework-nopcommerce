@@ -15,7 +15,6 @@ public class BaseTest {
 	protected WebDriver GetBrowserDriver(String browserName, String url) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		if (browser == BrowserList.FIREFOX) {
-			// System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser == BrowserList.CHROME) {

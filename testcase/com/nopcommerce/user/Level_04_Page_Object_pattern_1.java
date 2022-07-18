@@ -17,7 +17,7 @@ import commons.BaseTest;
 import pageObjects.HomePageObjects;
 import pageObjects.RegisterPageObject;
 
-public class Level_04_Page_Object_pattern extends BaseTest {
+public class Level_04_Page_Object_pattern_1 extends BaseTest {
 	private WebDriver driver;
 	private String email;
 	private HomePageObjects homePageObj;
