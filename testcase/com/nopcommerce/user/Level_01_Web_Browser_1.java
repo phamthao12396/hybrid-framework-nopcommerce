@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
-public class Level_01_Register_login {
+public class Level_01_Web_Browser_1 {
 	WebDriver driver;
 
 	@Parameters("browser")

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite parallel="false" name="NopCommerce">
 	<test name="Run on Firefox">
 		<parameter name="browser" value="Firefox" />
 		<classes>
-<!-- 			<class name="com.nopcommerce.user.Level_01_Register_login" /> -->
-			<class name ="javaBasic.Topic_08_Break_Continued" />
-		</classes>
-	</test>
-	<test name="Run on Chrome">
-		<parameter name="browser" value="Chrome" />
-		<classes>
-			<class name ="javaBasic.Topic_08_Break_Continued" />
+			<class name ="com.nopcommerce.user.Level_03_Page_Object_pattern_1" />
 		</classes>
 	</test>
 </suite>
