@@ -10,12 +10,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
 import pageObjects.HomePageObjects;
 import pageObjects.RegisterPageObject;
-import pageUIs.RegisterPageUI;
 
-public class Level_03_Page_Object_pattern_1 extends BasePage {
+public class Level_03_Page_Object_pattern_1 {
 	private WebDriver driver;
 	private String email;
 	private HomePageObjects homePageObj;
@@ -28,7 +26,7 @@ public class Level_03_Page_Object_pattern_1 extends BasePage {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		email = "rmail" + randomInt() + "@hmail.vn";
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		driver.get("https://demo.nopcommerce.com/");
 		homePageObj = new HomePageObjects(driver);
 	}
 
