@@ -14,18 +14,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObjects;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_II extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, email, password;
-	private HomePageObjects homePageObj;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
+	private UserHomePageObjects homePageObj;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -35,13 +35,13 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 		lastName = "Pham";
 		password = "123123";
 		email = "email" + randomInt() + "@hmail.vn";
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC01_Register_Account() {
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -53,25 +53,25 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		registerPage.clickToLogOutLink();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC02_Login_Account() {
-		homePageObj.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePageObj.clickToLoginLink( driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
 		loginPage.clickToLoginButton();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
 
 	@Test
 	public void TC03_Veriy_Account_Info() {
 		homePageObj.clickToMyAccountLink();
-		customerInfoPage = new CustomerInfoPageObject(driver);
+		customerInfoPage = new UserCustomerInfoPageObject(driver);
 		System.out.println("1" + firstName);
 		System.out.println("2" + customerInfoPage.getFirstNameTextBoxValue("value"));
 		Assert.assertEquals(customerInfoPage.getFirstNameTextBoxValue("value"), firstName);

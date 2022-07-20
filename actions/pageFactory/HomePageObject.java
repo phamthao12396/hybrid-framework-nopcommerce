@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import pageObjects.LoginPageObject;
+import pageObjects.user.UserLoginPageObject;
 
 public class HomePageObject extends BasePage {
 	private WebDriver driver;
@@ -19,9 +19,9 @@ public class HomePageObject extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[@class='ico-login']")
 	private WebElement loginLink;
 
-	public LoginPageObject clickToLoginLink() {
+	public UserLoginPageObject clickToLoginLink() {
 		waitForElementVisible(driver, loginLink);
 		clickToElement(loginLink);
-		return new LoginPageObject(driver);
+		return new UserLoginPageObject(driver);
 	}
 }

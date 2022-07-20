@@ -10,14 +10,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObjects;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_03_Page_Object_pattern_1 {
 	private WebDriver driver;
 	private String email;
-	private HomePageObjects homePageObj;
-	private RegisterPageObject registerPage;
+	private UserHomePageObjects homePageObj;
+	private UserRegisterPageObject registerPage;
 
 	@BeforeClass
 	public void BeforeTest() {
@@ -27,15 +27,15 @@ public class Level_03_Page_Object_pattern_1 {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		email = "rmail" + randomInt() + "@hmail.vn";
 		driver.get("https://demo.nopcommerce.com/");
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC01_Empty_Data() {
 
-		homePageObj.clickToRegisterLink();
+		homePageObj.clickToRegisterLink(driver);
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getFistNameErrorMessage(), "First name is required.");
@@ -48,8 +48,8 @@ public class Level_03_Page_Object_pattern_1 {
 
 	@Test
 	public void TC02_Invalid_Data() {
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -65,8 +65,8 @@ public class Level_03_Page_Object_pattern_1 {
 	@Test
 	public void TC03_Success() {
 
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -78,7 +78,7 @@ public class Level_03_Page_Object_pattern_1 {
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		registerPage.clickToLogOutLink();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@AfterClass

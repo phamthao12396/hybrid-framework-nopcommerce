@@ -10,24 +10,24 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.AddressesPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObjects;
-import pageObjects.LoginPageObject;
-import pageObjects.OrdersPageObject;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointsPageObject;
+import pageObjects.user.UserAddressesPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserOrdersPageObject;
+import pageObjects.user.UserRegisterPageObject;
+import pageObjects.user.UserRewardPointsPageObject;
 
 public class Level_07_Navigation_page extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, email, password;
-	private HomePageObjects homePageObj;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private OrdersPageObject orderPage;
-	private AddressesPageObject addressPage;
-	private RewardPointsPageObject rewardpointPage;
+	private UserHomePageObjects homePageObj;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserOrdersPageObject orderPage;
+	private UserAddressesPageObject addressPage;
+	private UserRewardPointsPageObject rewardpointPage;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -37,13 +37,13 @@ public class Level_07_Navigation_page extends BaseTest {
 		lastName = "Pham";
 		password = "123123";
 		email = "email" + randomInt() + "@hmail.vn";
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC01_Register_Account() {
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -55,25 +55,25 @@ public class Level_07_Navigation_page extends BaseTest {
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		registerPage.clickToLogOutLink();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC02_Login_Account() {
-		homePageObj.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePageObj.clickToLoginLink( driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
 		loginPage.clickToLoginButton();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
 
 	@Test
 	public void TC03_Veriy_Account_Info() {
 		homePageObj.clickToMyAccountLink();
-		customerInfoPage = new CustomerInfoPageObject(driver);
+		customerInfoPage = new UserCustomerInfoPageObject(driver);
 		Assert.assertEquals(customerInfoPage.getFirstNameTextBoxValue("value"), firstName);
 		Assert.assertEquals(customerInfoPage.getLastNameTextBoxValue("value"), lastName);
 		Assert.assertEquals(customerInfoPage.getEmailTextBoxValue("value"), email);

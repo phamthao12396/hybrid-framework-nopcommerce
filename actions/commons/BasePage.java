@@ -9,13 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObjects.AddressesPageObject;
-import pageObjects.OrdersPageObject;
-import pageObjects.RewardPointsPageObject;
+import pageObjects.user.UserAddressesPageObject;
+import pageObjects.user.UserOrdersPageObject;
+import pageObjects.user.UserRewardPointsPageObject;
 import pageUIs.BasePageUI;
 
 public class BasePage {
@@ -131,6 +132,7 @@ public class BasePage {
 	}
 
 	public void sendkeyToElement(WebDriver driver, String xpathExpression, String keyToSend) {
+		getWebElement(driver, xpathExpression).clear();
 		getWebElement(driver, xpathExpression).sendKeys(keyToSend);
 	}
 
@@ -276,6 +278,31 @@ public class BasePage {
 		((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, xpathExpression));
 	}
 
+	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				try {
+					return ((Long) jsExecutor.executeScript("return jQuery.active") == 0);
+				} catch (Exception e) {
+					return true;
+				}
+			}
+		};
+
+		ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				return jsExecutor.executeScript("return document.readyState").toString().equals("complete");
+			}
+		};
+
+		return explicitWait.until(jQueryLoad) && explicitWait.until(jsLoad);
+	}
+
 	public String getElementValidationMessage(WebDriver driver, String xpathExpression) {
 		return (String) ((JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage;", getWebElement(driver, xpathExpression));
 	}
@@ -304,19 +331,19 @@ public class BasePage {
 		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.alertIsPresent());
 	}
 
-	public OrdersPageObject clickToOrdersLink(WebDriver driver) {
+	public UserOrdersPageObject clickToOrdersLink(WebDriver driver) {
 		waitForElemenClickable(driver, BasePageUI.ORDERS_LINK);
 		clickToElement(driver, BasePageUI.ORDERS_LINK);
-		return PageGeneratorManager.getOrderPage(driver);
+		return PageGeneratorManager.getUserOrderPage(driver);
 	}
 
-	public AddressesPageObject clickToAddressesLink(WebDriver driver) {
+	public UserAddressesPageObject clickToAddressesLink(WebDriver driver) {
 		waitForElemenClickable(driver, BasePageUI.ADDRESSES_LINK);
 		clickToElement(driver, BasePageUI.ADDRESSES_LINK);
 		return PageGeneratorManager.getAddressesPage(driver);
 	}
 
-	public RewardPointsPageObject clickToRewardPointLink(WebDriver driver) {
+	public UserRewardPointsPageObject clickToRewardPointLink(WebDriver driver) {
 		waitForElemenClickable(driver, BasePageUI.REWARD_POINT_LINK);
 		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
 		return PageGeneratorManager.getRewardPointPage(driver);

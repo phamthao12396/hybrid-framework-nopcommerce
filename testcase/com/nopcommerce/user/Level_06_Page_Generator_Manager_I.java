@@ -1,12 +1,8 @@
 package com.nopcommerce.user;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,18 +11,18 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObjects;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, email, password;
-	private HomePageObjects homePageObj;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
+	private UserHomePageObjects homePageObj;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -36,12 +32,12 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 		lastName = "Pham";
 		password = "123123";
 		email = "email" + randomInt() + "@hmail.vn";
-		homePageObj = PageGeneratorManager.getHomePage(driver);
+		homePageObj = PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	@Test
 	public void TC01_Register_Account() {
-		registerPage = homePageObj.clickToRegisterLink();
+		registerPage = homePageObj.clickToRegisterLink(driver);
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -57,7 +53,7 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void TC02_Login_Account() {
 
-		loginPage = homePageObj.clickToLoginLink();
+		loginPage = homePageObj.clickToLoginLink(driver);
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
 		homePageObj = loginPage.clickToLoginButton();

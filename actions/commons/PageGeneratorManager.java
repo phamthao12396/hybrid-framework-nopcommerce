@@ -2,41 +2,51 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObjects.AddressesPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObjects;
-import pageObjects.LoginPageObject;
-import pageObjects.OrdersPageObject;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointsPageObject;
+import pageObject.admin.AdminDashboardPage;
+import pageObject.admin.AdminLoginPage;
+import pageObjects.user.UserAddressesPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserOrdersPageObject;
+import pageObjects.user.UserRegisterPageObject;
+import pageObjects.user.UserRewardPointsPageObject;
 
 public class PageGeneratorManager {
-	public static HomePageObjects getHomePage(WebDriver driver) {
-		return new HomePageObjects(driver);
+	public static UserHomePageObjects getUserHomePage(WebDriver driver) {
+		return new UserHomePageObjects(driver);
 	}
 
-	public static RegisterPageObject getRegisterPage(WebDriver driver) {
-		return new RegisterPageObject(driver);
+	public static UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
+		return new UserRegisterPageObject(driver);
 	}
 
-	public static LoginPageObject getLoginPage(WebDriver driver) {
-		return new LoginPageObject(driver);
+	public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
+		return new UserLoginPageObject(driver);
 	}
 
-	public static CustomerInfoPageObject getCustomerInfoPage(WebDriver driver) {
-		return new CustomerInfoPageObject(driver);
+	public static UserCustomerInfoPageObject getUserCustomerInfoPage(WebDriver driver) {
+		return new UserCustomerInfoPageObject(driver);
 	}
 
-	public static OrdersPageObject getOrderPage(WebDriver driver) {
-		return new OrdersPageObject(driver);
+	public static UserOrdersPageObject getUserOrderPage(WebDriver driver) {
+		return new UserOrdersPageObject(driver);
 	}
 
-	public static AddressesPageObject getAddressesPage(WebDriver driver) {
-		return new AddressesPageObject(driver);
+	public static UserAddressesPageObject getAddressesPage(WebDriver driver) {
+		return new UserAddressesPageObject(driver);
 	}
 
-	public static RewardPointsPageObject getRewardPointPage(WebDriver driver) {
-		return new RewardPointsPageObject(driver);
+	public static UserRewardPointsPageObject getRewardPointPage(WebDriver driver) {
+		return new UserRewardPointsPageObject(driver);
+	}
+
+	public static AdminLoginPage getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPage(driver);
+	}
+
+	public static AdminDashboardPage getAdminDashboardPage(WebDriver driver) {
+		return new AdminDashboardPage(driver);
 	}
 
 }

@@ -14,14 +14,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObjects;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserHomePageObjects;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_04_Page_Object_pattern_2 extends BaseTest {
 	private WebDriver driver;
 	private String email;
-	private HomePageObjects homePageObj;
-	private RegisterPageObject registerPage;
+	private UserHomePageObjects homePageObj;
+	private UserRegisterPageObject registerPage;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -29,15 +29,15 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 		driver = GetBrowserDriver(browserName, urlValue);
 
 		email = "rmail" + randomInt() + "@hmail.vn";
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC01_Empty_Data() {
 
-		homePageObj.clickToRegisterLink();
+		homePageObj.clickToRegisterLink(driver);
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getFistNameErrorMessage(), "First name is required.");
@@ -50,8 +50,8 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 
 	@Test
 	public void TC02_Invalid_Data() {
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -67,8 +67,8 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 	@Test
 	public void TC03_Success() {
 
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -80,14 +80,14 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		registerPage.clickToLogOutLink();
 
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = new UserHomePageObjects(driver);
 	}
 
 	@Test
 	public void TC04_Existing_Email() {
 
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -102,8 +102,8 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 	@Test
 	public void TC05_Password_less_than_6() {
 
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
@@ -118,8 +118,8 @@ public class Level_04_Page_Object_pattern_2 extends BaseTest {
 	@Test
 	public void TC06_Invalid_Confirm_Password() {
 
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePageObj.clickToRegisterLink(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("fisrt Name");
 		registerPage.sendkeyToLastNameTextbox("fisr Name");
