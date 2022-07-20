@@ -5,7 +5,7 @@
 	<test name="Run on Firefox">
 		<parameter name="browser" value="Firefox" />
 		<classes>
-			<class name ="com.nopcommerce.user.Level_05_Page_Factory" />
+			<class name ="com.nopcommerce.user.Level_07_Navigation_page" />
 		</classes>
 	</test>
 <!-- 	<test name="Run on chrome"> -->
