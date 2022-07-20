@@ -1,12 +1,8 @@
 package com.nopcommerce.user;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -14,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
+import commons.PageGeneratorManager;
 import pageObjects.CustomerInfoPageObject;
 import pageObjects.HomePageObjects;
 import pageObjects.LoginPageObject;
@@ -35,13 +32,12 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 		lastName = "Pham";
 		password = "123123";
 		email = "email" + randomInt() + "@hmail.vn";
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = PageGeneratorManager.getHomePage(driver);
 	}
 
 	@Test
 	public void TC01_Register_Account() {
-		homePageObj.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePageObj.clickToRegisterLink();
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -51,29 +47,21 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogOutLink();
-
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = registerPage.clickToLogOutLink();
 	}
 
 	@Test
 	public void TC02_Login_Account() {
-		homePageObj.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePageObj.clickToLoginLink();
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
-		loginPage.clickToLoginButton();
-
-		homePageObj = new HomePageObjects(driver);
+		homePageObj = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
 
 	@Test
 	public void TC03_Veriy_Account_Info() {
-		homePageObj.clickToMyAccountLink();
-		customerInfoPage = new CustomerInfoPageObject(driver);
-		System.out.println("1" + firstName);
-		System.out.println("2" + customerInfoPage.getFirstNameTextBoxValue("value"));
+		customerInfoPage = homePageObj.clickToMyAccountLink();
 		Assert.assertEquals(customerInfoPage.getFirstNameTextBoxValue("value"), firstName);
 		Assert.assertEquals(customerInfoPage.getLastNameTextBoxValue("value"), lastName);
 		Assert.assertEquals(customerInfoPage.getEmailTextBoxValue("value"), email);
