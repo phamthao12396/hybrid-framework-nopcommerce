@@ -49,7 +49,7 @@ public class Level_04_Page_Object_pattern_3 extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogOutLink();
+		registerPage.clickToLogOutLink(driver);
 		homePageObj = new UserHomePageObjects(driver);
 	}
 

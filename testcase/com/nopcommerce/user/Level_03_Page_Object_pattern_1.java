@@ -76,7 +76,7 @@ public class Level_03_Page_Object_pattern_1 {
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogOutLink();
+		registerPage.clickToLogOutLink(driver);
 
 		homePageObj = new UserHomePageObjects(driver);
 	}

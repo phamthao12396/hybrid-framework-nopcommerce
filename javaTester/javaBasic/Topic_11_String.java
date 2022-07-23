@@ -1,14 +1,17 @@
 package javaBasic;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
-
-import org.testng.annotations.Test;
 
 public class Topic_11_String {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String text = "xpath=//div[contains(@class,'account-navigation')]//li[a[text()='Orders']]";
+		String textID = "Id=Email";
+
+		if (textID.startsWith("id") || textID.startsWith("Id")) {
+			System.out.println(textID.substring(3));
+
+		}
 
 	}
 
@@ -47,7 +50,6 @@ public class Topic_11_String {
 		System.out.println("length: " + str.length());
 	}
 
-	@Test
 	public void TC02_BT() {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();

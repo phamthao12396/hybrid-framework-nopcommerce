@@ -78,7 +78,7 @@ public class UserRegisterPageObject extends BasePage {
 		return getElementText(driver, UserRegisterPageUI.REGISTER_SUCCESS_MESSAGE);
 	}
 
-	public UserHomePageObjects clickToLogOutLink() {
+	public UserHomePageObjects clickToLogOutLink(WebDriver driver) {
 		waitForElementVisible(driver, UserRegisterPageUI.LOG_OUT_LINK);
 		clickToElement(driver, UserRegisterPageUI.LOG_OUT_LINK);
 		return PageGeneratorManager.getUserHomePage(driver);

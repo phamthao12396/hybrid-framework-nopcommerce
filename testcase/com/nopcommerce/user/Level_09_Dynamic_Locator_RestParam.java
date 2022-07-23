@@ -2,6 +2,7 @@ package com.nopcommerce.user;
 
 import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -11,18 +12,24 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
+import pageObjects.user.UserAddressesPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
 import pageObjects.user.UserHomePageObjects;
 import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserOrdersPageObject;
 import pageObjects.user.UserRegisterPageObject;
+import pageObjects.user.UserRewardPointsPageObject;
 
-public class Level_06_Page_Generator_Manager_III extends BaseTest {
+public class Level_09_Dynamic_Locator_RestParam extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, email, password;
 	private UserHomePageObjects homePageObj;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
 	private UserCustomerInfoPageObject customerInfoPage;
+	private UserOrdersPageObject orderPage;
+	private UserAddressesPageObject addressPage;
+	private UserRewardPointsPageObject rewardpointPage;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -48,11 +55,8 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		homePageObj = registerPage.clickToLogOutLink(driver);
-	}
 
-	@Test
-	public void TC02_Login_Account() {
-		loginPage = homePageObj.clickToLoginLink( driver);
+		loginPage = homePageObj.clickToLoginLink(driver);
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
 		homePageObj = loginPage.clickToLoginButton();
@@ -60,17 +64,31 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 	}
 
 	@Test
-	public void TC03_Veriy_Account_Info() {
+	public void TC02_Navigation_Page() {
 		customerInfoPage = homePageObj.clickToMyAccountLink(driver);
-		Assert.assertEquals(customerInfoPage.getFirstNameTextBoxValue("value"), firstName);
-		Assert.assertEquals(customerInfoPage.getLastNameTextBoxValue("value"), lastName);
-		Assert.assertEquals(customerInfoPage.getEmailTextBoxValue("value"), email);
 
+		customerInfoPage.clickToPageAtMyAccountPage(driver, "Orders");
+		orderPage = PageGeneratorManager.getUserOrderPage(driver);
+
+		orderPage.clickToPageAtMyAccountPage(driver, "Addresses");
+		addressPage = PageGeneratorManager.getAddressesPage(driver);
+
+		addressPage.clickToPageAtMyAccountPage(driver, "Reward points");
+		rewardpointPage = PageGeneratorManager.getRewardPointPage(driver);
+
+		rewardpointPage.clickToPageAtMyAccountPage(driver, "Addresses");
+		addressPage = PageGeneratorManager.getAddressesPage(driver);
+
+		// orderPage = addressPage.clickToOrdersLink(driver);
+		// System.out.println("// addresses -> orders");
+		//
+		// rewardpointPage = orderPage.clickToRewardPointLink(driver);
+		// System.out.println("// orders -> reward point");
 	}
 
 	@AfterClass
 	public void AfterTest() {
-		driver.quit();
+		// driver.quit();
 	}
 
 	public int randomInt() {

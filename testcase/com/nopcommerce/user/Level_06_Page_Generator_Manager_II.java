@@ -51,7 +51,7 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogOutLink();
+		registerPage.clickToLogOutLink(driver);
 
 		homePageObj = new UserHomePageObjects(driver);
 	}
@@ -70,7 +70,7 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 
 	@Test
 	public void TC03_Veriy_Account_Info() {
-		homePageObj.clickToMyAccountLink();
+		homePageObj.clickToMyAccountLink(driver);
 		customerInfoPage = new UserCustomerInfoPageObject(driver);
 		System.out.println("1" + firstName);
 		System.out.println("2" + customerInfoPage.getFirstNameTextBoxValue("value"));

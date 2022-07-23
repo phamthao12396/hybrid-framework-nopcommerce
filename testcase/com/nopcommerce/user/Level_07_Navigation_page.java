@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
+import commons.PageGeneratorManager;
 import pageObjects.user.UserAddressesPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
 import pageObjects.user.UserHomePageObjects;
@@ -37,13 +38,12 @@ public class Level_07_Navigation_page extends BaseTest {
 		lastName = "Pham";
 		password = "123123";
 		email = "email" + randomInt() + "@hmail.vn";
-		homePageObj = new UserHomePageObjects(driver);
+		homePageObj = PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	@Test
 	public void TC01_Register_Account() {
-		homePageObj.clickToRegisterLink(driver);
-		registerPage = new UserRegisterPageObject(driver);
+		registerPage = homePageObj.clickToRegisterLink(driver);
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -53,27 +53,23 @@ public class Level_07_Navigation_page extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogOutLink();
 
-		homePageObj = new UserHomePageObjects(driver);
+		homePageObj = registerPage.clickToLogOutLink(driver);
 	}
 
 	@Test
 	public void TC02_Login_Account() {
-		homePageObj.clickToLoginLink( driver);
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePageObj.clickToLoginLink(driver);
 		loginPage.sendKeyToEmailTextBox(email);
 		loginPage.senKeyToPasswordTextBox(password);
-		loginPage.clickToLoginButton();
 
-		homePageObj = new UserHomePageObjects(driver);
+		homePageObj = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
 
 	@Test
 	public void TC03_Veriy_Account_Info() {
-		homePageObj.clickToMyAccountLink();
-		customerInfoPage = new UserCustomerInfoPageObject(driver);
+		customerInfoPage = homePageObj.clickToMyAccountLink(driver);
 		Assert.assertEquals(customerInfoPage.getFirstNameTextBoxValue("value"), firstName);
 		Assert.assertEquals(customerInfoPage.getLastNameTextBoxValue("value"), lastName);
 		Assert.assertEquals(customerInfoPage.getEmailTextBoxValue("value"), email);
@@ -104,7 +100,7 @@ public class Level_07_Navigation_page extends BaseTest {
 
 	@AfterClass
 	public void AfterTest() {
-		driver.quit();
+		// driver.quit();
 	}
 
 	public int randomInt() {

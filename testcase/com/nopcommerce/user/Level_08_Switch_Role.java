@@ -16,7 +16,7 @@ import pageObject.admin.AdminLoginPage;
 import pageObjects.user.UserHomePageObjects;
 import pageObjects.user.UserLoginPageObject;
 
-public class Level_07_Switch_Role extends BaseTest {
+public class Level_08_Switch_Role extends BaseTest {
 	private WebDriver driver;
 	private String adminEmail, adminPassword, usermail, userPassword;
 	private UserHomePageObjects userHomePageObj;

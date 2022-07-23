@@ -30,7 +30,7 @@ public class UserHomePageObjects extends BasePage {
 		return isElementDisplay(driver, UserHomePageUIs.MY_ACCOUNT_LINK);
 	}
 
-	public UserCustomerInfoPageObject clickToMyAccountLink() {
+	public UserCustomerInfoPageObject clickToMyAccountLink(WebDriver driver) {
 		waitForElementVisible(driver, UserHomePageUIs.MY_ACCOUNT_LINK);
 		clickToElement(driver, UserHomePageUIs.MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getUserCustomerInfoPage(driver);
