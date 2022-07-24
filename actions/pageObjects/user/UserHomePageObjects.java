@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
-import pageUIs.UserHomePageUIs;
+import pageUIs.nopCommerce.user.UserHomePageUIs;
 
 public class UserHomePageObjects extends BasePage {
 	private WebDriver driver;

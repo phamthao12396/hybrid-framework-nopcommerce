@@ -3,7 +3,7 @@ package pageObject.admin;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.AdminDashboardPageUI;
+import pageUIs.nopCommerce.admin.AdminDashboardPageUI;
 
 public class AdminDashboardPage extends BasePage {
 	private WebDriver driver;

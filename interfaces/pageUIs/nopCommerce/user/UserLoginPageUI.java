@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIs.nopCommerce.user;
 
 public class UserLoginPageUI {
 	public static final String LOGIN_BUTTON = "xpath=//button[contains(@class,'login-button')]";

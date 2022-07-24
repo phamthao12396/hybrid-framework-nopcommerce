@@ -5,13 +5,11 @@ import java.util.Scanner;
 public class Topic_11_String {
 
 	public static void main(String[] args) {
-		String text = "xpath=//div[contains(@class,'account-navigation')]//li[a[text()='Orders']]";
-		String textID = "Id=Email";
+		String text = "Views 1 page of bla bla";
 
-		if (textID.startsWith("id") || textID.startsWith("Id")) {
-			System.out.println(textID.substring(3));
-
-		}
+		String[] arr = text.split("\\s");
+		int a = Integer.parseInt(arr[1]);
+		System.out.println(a + 1);
 
 	}
 

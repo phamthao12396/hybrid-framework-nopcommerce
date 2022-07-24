@@ -1,6 +1,5 @@
 package commons;
 
-import java.text.Format;
 import java.util.List;
 import java.util.Set;
 
@@ -14,13 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import pageObjects.user.UserAddressesPageObject;
 import pageObjects.user.UserOrdersPageObject;
 import pageObjects.user.UserRewardPointsPageObject;
-import pageUIs.BasePageUI;
-import pageUIs.UserCustomerInfoPageUI;
-import pageUIs.UserHomePageUIs;
+import pageUIs.nopCommerce.user.BasePageUI;
 
 public class BasePage {
 	public static BasePage getBasePage() {
@@ -124,7 +122,6 @@ public class BasePage {
 
 	private By getByLocator(String locatorType) {
 		By by = null;
-		System.out.println("before: " + locatorType);
 		if (locatorType.startsWith("ID") || locatorType.startsWith("id") || locatorType.startsWith("Id")) {
 			by = By.id(locatorType.substring(3));
 		} else if (locatorType.startsWith("Name") || locatorType.startsWith("NAME") || locatorType.startsWith("name")) {
@@ -138,7 +135,6 @@ public class BasePage {
 		} else {
 			throw new RuntimeException("Locator type is not support");
 		}
-		System.out.println("After: " + locatorType);
 		return by;
 
 	}
@@ -147,8 +143,16 @@ public class BasePage {
 		return driver.findElement(getByLocator(locatorType));
 	}
 
+	public WebElement getWebElement(WebDriver driver, String locatorType, String... dynamicValue) {
+		return driver.findElement(getByLocator(getDynamicXpath(locatorType, dynamicValue)));
+	}
+
 	public List<WebElement> getWebElements(WebDriver driver, String locatorType) {
 		return driver.findElements(getByLocator(locatorType));
+	}
+
+	public List<WebElement> getWebElements(WebDriver driver, String locatorType, String... dynamicValue) {
+		return driver.findElements(getByLocator(getDynamicXpath(locatorType, dynamicValue)));
 	}
 
 	public void clickToElement(WebDriver driver, String locatorType) {
@@ -306,9 +310,14 @@ public class BasePage {
 		action.moveToElement(getWebElement(driver, getDynamicXpath(locatorType, dynamicValue))).perform();
 	}
 
-	public void pressKeyboardToElement(WebDriver driver, CharSequence key) {
+	public void pressKeyboardToElement(WebDriver driver, String locatorType, CharSequence key) {
 		Actions action = new Actions(driver);
-		action.sendKeys(key).perform();
+		action.sendKeys(getWebElement(driver, locatorType), key).perform();
+	}
+
+	public void pressKeyboardToElement(WebDriver driver, String locatorType, CharSequence key, String... dynamicValue) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getWebElement(driver, getDynamicXpath(locatorType, dynamicValue)), key).perform();
 	}
 
 	public Object executeJavascriptForBrowser(WebDriver driver, String javaScript) {
@@ -485,8 +494,10 @@ public class BasePage {
 	public void clickToPageAtMyAccountPage(WebDriver driver, String dynamicValue) {
 		waitForElemenClickable(driver, getDynamicXpath(BasePageUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, dynamicValue));
 		String locator = getDynamicXpath(BasePageUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, dynamicValue);
+		Assert.assertTrue(areJQueryAndJSLoadedSuccess(driver));
 		clickToElement(driver, locator);
 	}
 
 	private long longTimeout = 30;
+
 }

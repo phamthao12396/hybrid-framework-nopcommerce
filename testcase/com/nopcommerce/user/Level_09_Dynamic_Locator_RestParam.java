@@ -2,7 +2,6 @@ package com.nopcommerce.user;
 
 import java.util.Random;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -78,17 +77,11 @@ public class Level_09_Dynamic_Locator_RestParam extends BaseTest {
 
 		rewardpointPage.clickToPageAtMyAccountPage(driver, "Addresses");
 		addressPage = PageGeneratorManager.getAddressesPage(driver);
-
-		// orderPage = addressPage.clickToOrdersLink(driver);
-		// System.out.println("// addresses -> orders");
-		//
-		// rewardpointPage = orderPage.clickToRewardPointLink(driver);
-		// System.out.println("// orders -> reward point");
 	}
 
 	@AfterClass
 	public void AfterTest() {
-		// driver.quit();
+		driver.quit();
 	}
 
 	public int randomInt() {
