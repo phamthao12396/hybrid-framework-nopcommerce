@@ -1,4 +1,4 @@
-package pageObject.techpanda;
+package pageObject.jQuery;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pageObject.techpanda;
+package pageObject.jQuery;
 
 import org.openqa.selenium.WebDriver;
 

@@ -1,4 +1,4 @@
-package com.techpanda.datatable;
+package com.jQuery.datatable;
 
 import java.util.List;
 import java.util.Random;
@@ -12,13 +12,12 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.GlobalContants;
-import pageFactory.HomePageObject;
-import pageObject.techpanda.AdminHomePage;
-import pageObject.techpanda.AdminLoginPage;
-import pageObject.techpanda.PageGeneratorManager;
-import pageObject.techpanda.UserHomePage;
-import pageObject.techpanda.UserLoginPage;
-import pageObject.techpanda.UserRegisterPage;
+import pageObject.jQuery.AdminHomePage;
+import pageObject.jQuery.AdminLoginPage;
+import pageObject.jQuery.PageGeneratorManager;
+import pageObject.jQuery.UserHomePage;
+import pageObject.jQuery.UserLoginPage;
+import pageObject.jQuery.UserRegisterPage;
 
 public class Level_10_Data_Table extends BaseTest {
 	WebDriver driver;
@@ -81,8 +80,6 @@ public class Level_10_Data_Table extends BaseTest {
 				System.out.println("--------------------------------");
 				System.out.println(string);
 			}
-		} else {
-			System.out.println("Không có khách hàng nào phù hợp");
 		}
 	}
 
