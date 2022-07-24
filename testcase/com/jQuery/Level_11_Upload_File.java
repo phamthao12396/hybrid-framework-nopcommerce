@@ -1,6 +1,7 @@
 package com.jQuery;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -15,7 +16,9 @@ public class Level_11_Upload_File extends BaseTest {
 	JQueryUploadPage jQueryUploadPage;
 	String roseImg = "hhong.jpg";
 	String lotusImg = "hsen.jpg";
-	String orangeImg = "orange.jpg";
+	String catImg = "cat.png";
+	String dogImg = "dog.png";
+	String[] mutipleFile = { roseImg, lotusImg, catImg, dogImg };
 
 	@Parameters({ "browser", "url" })
 	@BeforeTest
@@ -26,19 +29,32 @@ public class Level_11_Upload_File extends BaseTest {
 
 	@Test
 	public void TC01_Upload_Single_File() {
-		jQueryUploadPage.addFileToUploadByName(roseImg);
-		jQueryUploadPage.clickStartUploadFileByName(roseImg);
-		jQueryUploadPage.verifiedFileUploadSucces(roseImg);
+		jQueryUploadPage.uploadMultipleFile(driver, roseImg);
+		Assert.assertTrue(jQueryUploadPage.isFileLoadByName(roseImg));
+		jQueryUploadPage.clickStartUploadFile();
+		Assert.assertTrue(jQueryUploadPage.isFileImageUploadByName(roseImg));
 
 	}
 
 	@Test
 	public void TC02_Upload_Multiple_File() {
+		jQueryUploadPage.uploadMultipleFile(driver, mutipleFile);
+
+		Assert.assertTrue(jQueryUploadPage.isFileLoadByName(roseImg));
+		Assert.assertTrue(jQueryUploadPage.isFileLoadByName(lotusImg));
+		Assert.assertTrue(jQueryUploadPage.isFileLoadByName(catImg));
+		Assert.assertTrue(jQueryUploadPage.isFileLoadByName(dogImg));
+
+		jQueryUploadPage.clickStartUploadFile();
+		Assert.assertTrue(jQueryUploadPage.isFileImageUploadByName(roseImg));
+		Assert.assertTrue(jQueryUploadPage.isFileImageUploadByName(lotusImg));
+		Assert.assertTrue(jQueryUploadPage.isFileImageUploadByName(catImg));
+		Assert.assertTrue(jQueryUploadPage.isFileImageUploadByName(dogImg));
 
 	}
 
 	@AfterTest
 	public void AfterClass() {
-		driver.quit();
+		// driver.quit();
 	}
 }
