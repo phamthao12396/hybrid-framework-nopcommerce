@@ -55,6 +55,6 @@ public class Level_11_Upload_File extends BaseTest {
 
 	@AfterTest
 	public void AfterClass() {
-		// driver.quit();
+		driver.quit();
 	}
 }
