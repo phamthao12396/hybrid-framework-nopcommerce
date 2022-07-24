@@ -1,4 +1,4 @@
-package com.jQuery.datatable;
+package com.jQuery;
 
 import java.util.List;
 import java.util.Random;
@@ -12,12 +12,12 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.GlobalContants;
-import pageObject.jQuery.AdminHomePage;
-import pageObject.jQuery.AdminLoginPage;
-import pageObject.jQuery.PageGeneratorManager;
-import pageObject.jQuery.UserHomePage;
-import pageObject.jQuery.UserLoginPage;
-import pageObject.jQuery.UserRegisterPage;
+import pageObject.jQuery.dataTable.AdminHomePage;
+import pageObject.jQuery.dataTable.AdminLoginPage;
+import pageObject.jQuery.dataTable.PageGeneratorManager;
+import pageObject.jQuery.dataTable.UserHomePage;
+import pageObject.jQuery.dataTable.UserLoginPage;
+import pageObject.jQuery.dataTable.UserRegisterPage;
 
 public class Level_10_Data_Table extends BaseTest {
 	WebDriver driver;

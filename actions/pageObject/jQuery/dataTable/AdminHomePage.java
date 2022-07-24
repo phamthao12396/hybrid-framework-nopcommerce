@@ -1,4 +1,4 @@
-package pageObject.jQuery;
+package pageObject.jQuery.dataTable;
 
 import java.util.ArrayList;
 import java.util.List;

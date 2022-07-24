@@ -2,15 +2,15 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObject.admin.AdminDashboardPage;
-import pageObject.admin.AdminLoginPage;
-import pageObjects.user.UserAddressesPageObject;
-import pageObjects.user.UserCustomerInfoPageObject;
-import pageObjects.user.UserHomePageObjects;
-import pageObjects.user.UserLoginPageObject;
-import pageObjects.user.UserOrdersPageObject;
-import pageObjects.user.UserRegisterPageObject;
-import pageObjects.user.UserRewardPointsPageObject;
+import pageObject.nopComerce.admin.AdminDashboardPage;
+import pageObject.nopComerce.admin.AdminLoginPage;
+import pageObjects.nopComerce.user.UserAddressesPageObject;
+import pageObjects.nopComerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopComerce.user.UserHomePageObjects;
+import pageObjects.nopComerce.user.UserLoginPageObject;
+import pageObjects.nopComerce.user.UserOrdersPageObject;
+import pageObjects.nopComerce.user.UserRegisterPageObject;
+import pageObjects.nopComerce.user.UserRewardPointsPageObject;
 
 public class PageGeneratorManager {
 	public static UserHomePageObjects getUserHomePage(WebDriver driver) {

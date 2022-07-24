@@ -1,4 +1,4 @@
-package pageObject.admin;
+package pageObject.nopComerce.admin;
 
 import org.openqa.selenium.WebDriver;
 

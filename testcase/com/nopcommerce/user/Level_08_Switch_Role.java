@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.GlobalContants;
 import commons.PageGeneratorManager;
-import pageObject.admin.AdminDashboardPage;
-import pageObject.admin.AdminLoginPage;
-import pageObjects.user.UserHomePageObjects;
-import pageObjects.user.UserLoginPageObject;
+import pageObject.nopComerce.admin.AdminDashboardPage;
+import pageObject.nopComerce.admin.AdminLoginPage;
+import pageObjects.nopComerce.user.UserHomePageObjects;
+import pageObjects.nopComerce.user.UserLoginPageObject;
 
 public class Level_08_Switch_Role extends BaseTest {
 	private WebDriver driver;

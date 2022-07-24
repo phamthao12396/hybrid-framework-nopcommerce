@@ -14,8 +14,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.user.UserHomePageObjects;
-import pageObjects.user.UserRegisterPageObject;
+import pageObjects.nopComerce.user.UserHomePageObjects;
+import pageObjects.nopComerce.user.UserRegisterPageObject;
 
 public class Level_04_Page_Object_pattern_1 extends BaseTest {
 	private WebDriver driver;

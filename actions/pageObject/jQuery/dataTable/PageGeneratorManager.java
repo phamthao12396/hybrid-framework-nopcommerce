@@ -1,6 +1,8 @@
-package pageObject.jQuery;
+package pageObject.jQuery.dataTable;
 
 import org.openqa.selenium.WebDriver;
+
+import pageObject.jQuery.uploadFile.JQueryUploadPage;
 
 public class PageGeneratorManager {
 	WebDriver driver;
@@ -24,4 +26,5 @@ public class PageGeneratorManager {
 	public static UserRegisterPage getUserRegisterPage(WebDriver driver) {
 		return new UserRegisterPage(driver);
 	}
+
 }

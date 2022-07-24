@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import pageObjects.user.UserLoginPageObject;
+import pageObjects.nopComerce.user.UserLoginPageObject;
 
 public class HomePageObject extends BasePage {
 	private WebDriver driver;
