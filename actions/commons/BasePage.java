@@ -23,6 +23,7 @@ import pageUIs.jQuery.uploadPageUI.jQueryUploadPageUI;
 import pageUIs.nopCommerce.user.BasePageUI;
 
 public class BasePage {
+
 	public static BasePage getBasePage() {
 		return new BasePage();
 	}

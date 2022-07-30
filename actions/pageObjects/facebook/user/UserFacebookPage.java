@@ -28,6 +28,7 @@ public class UserFacebookPage extends BasePage {
 	}
 
 	public boolean isConfirmEmailTextboxUnDisplay() {
+		waitForElementInvisible(driver, FacebookPageUI.CONFIRM_EMAIL_TEXTBOX);
 		return isElementUnDisplay(driver, FacebookPageUI.CONFIRM_EMAIL_TEXTBOX);
 	}
 

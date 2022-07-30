@@ -11,7 +11,7 @@
 	<test name="Run on Firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name ="com.fackebook.user.Level_13_Element_Undisplay" />
+			<class name ="com.fackebook.user.Level_14_Log4J_ReportNG" />
 		</classes>
 	</test>
 	
