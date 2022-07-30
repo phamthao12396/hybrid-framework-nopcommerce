@@ -461,11 +461,17 @@ public class BasePage {
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locatorType) {
-		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeout);
+		overrideGlobalTimeout(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+		overrideGlobalTimeout(driver, longTimeout);
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locatorType, String... dynamicValue) {
-		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValue))));
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeout);
+		overrideGlobalTimeout(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValue))));
+		overrideGlobalTimeout(driver, longTimeout);
 	}
 
 	public void waitForAlertPresence(WebDriver driver) {

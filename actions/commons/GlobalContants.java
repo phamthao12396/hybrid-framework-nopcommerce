@@ -10,6 +10,6 @@ public class GlobalContants {
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
 	public static final String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
 	public static final long LONG_TIME_OUT = 30;
-	public static final long SHORT_TIME_OUT = 10;
+	public static final long SHORT_TIME_OUT = 7;
 
 }
