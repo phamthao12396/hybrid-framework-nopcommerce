@@ -526,10 +526,13 @@ public class BasePage {
 		List<WebElement> elements = getWebElements(driver, locatorType);
 		overrideGlobalTimeout(driver, longTimeout);
 		if (elements.size() == 0) {
+			System.out.println("not in DOM");
 			return true;
-		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("not display + in DOM");
 			return true;
 		} else {
+			System.out.println("display");
 			return false;
 		}
 	}

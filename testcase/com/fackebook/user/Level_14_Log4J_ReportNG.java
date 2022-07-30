@@ -35,16 +35,16 @@ public class Level_14_Log4J_ReportNG extends BaseTest {
 
 	@Test
 	public void TC_02_Element_UnDisplay_In_DOM() {
-		log.info("TC_02_Element_UnDisplay_In_DOM: send Email to Email Textbox" + email);
+		log.info("TC_02_Element_UnDisplay_In_DOM: send Email to Email Textbox: " + email);
 		fbPage.senkeyToEmailTextBox(email);
 
-		log.info("TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay");
-		verifyTrue(fbPage.isConfirmEmailTextboxUnDisplay());
+		log.info("TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is Display");
+		verifyTrue(fbPage.isConfirmEmailTextboxDisplay());
 
 		log.info("TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox");
 		fbPage.senkeyToEmailTextBox("");
 
-		log.info("TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay");
+		log.info("TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay");
 		verifyTrue(fbPage.isConfirmEmailTextboxUnDisplay());
 	}
 
@@ -53,7 +53,7 @@ public class Level_14_Log4J_ReportNG extends BaseTest {
 		log.info("TC_03_Element_UnDisplay_Not_In_DOM: Close register popup");
 		fbPage.clickToCloseButton();
 
-		log.info("TC_03_Element_UnDisplay_Not_In_DOM: Verify Email Textbox is UnDisplay");
+		log.info("TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay");
 		verifyTrue(fbPage.isConfirmEmailTextboxUnDisplay());
 	}
 

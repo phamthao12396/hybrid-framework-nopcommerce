@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.testng.ITestResult;
 
-// Get/Set failed status for test cases.
-// Set failed message to Report HTML
 public class VerificationFailures extends HashMap<ITestResult, List<Throwable>> {
 	private VerificationFailures() {
 		super();

@@ -1,0 +1,108 @@
+[INFO ] [2022-07-31 00:08:39,593] TC_01_Element_Display: Click To Register Button
+[INFO ] [2022-07-31 00:08:39,877] TC_01_Element_Display: Verify Email Textbox is Display
+[INFO ] [2022-07-31 00:08:40,172]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-07-31 00:08:40,175] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+[INFO ] [2022-07-31 00:08:40,243] TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay
+[INFO ] [2022-07-31 00:08:47,676] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+[INFO ] [2022-07-31 00:08:47,935] TC_03_Element_UnDisplay_Not_In_DOM: Verify Email Textbox is UnDisplay
+[INFO ] [2022-07-31 00:09:01,986]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:17:34,175] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:17:34,461] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:17:34,765]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:17:34,769] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:17:34,862] TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay
+ [2022-07-31 00:17:42,384] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:17:42,627] TC_03_Element_UnDisplay_Not_In_DOM: Verify Email Textbox is UnDisplay
+ [2022-07-31 00:17:56,657]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:19:21,484] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:19:21,770] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:19:22,077]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:19:22,080] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:19:22,172] TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay
+ [2022-07-31 00:19:22,204]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:19:22,204] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:19:22,258] TC_02_Element_UnDisplay_In_DOM: Verify Email Textbox is UnDisplay
+ [2022-07-31 00:19:22,291]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:19:22,293] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:19:22,529] TC_03_Element_UnDisplay_Not_In_DOM: Verify Email Textbox is UnDisplay
+ [2022-07-31 00:19:29,562]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:27:49,057] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:27:49,339] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:27:49,625]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:27:49,629] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:27:49,710] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:27:49,753]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:27:49,753] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:27:49,821] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:27:49,871]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:27:49,872] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:27:50,108] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:27:57,137]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:29:36,769] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:29:37,056] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:29:37,356]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:29:37,359] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:29:37,435] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:29:37,467]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:29:37,468] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:29:37,525] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:29:37,565]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:29:37,566] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:29:37,801] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:29:44,818]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:31:21,998] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:31:22,279] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:31:22,585]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:31:22,588] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:31:22,661] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:31:30,149] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:31:30,389] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:31:37,436]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:33:37,795] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:33:38,080] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:33:38,373]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:33:38,375] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:33:38,450] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:33:38,490]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:33:38,491] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:33:38,557] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:33:39,134]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:33:39,138] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:33:39,384] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:33:53,450]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:35:10,055] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:35:10,346] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:35:10,633]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:35:10,635] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:35:10,706] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is Display
+ [2022-07-31 00:35:10,750]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:35:10,750] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:35:10,797] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:35:11,376]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:35:11,378] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:35:11,615] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:35:25,679]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:38:10,479] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:38:10,764] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:38:11,042]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:38:11,045] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:38:12,111] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is Display
+ [2022-07-31 00:38:12,151]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:38:12,151] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:38:13,213] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:38:13,289]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:38:13,292] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:38:13,530] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:38:27,575]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:39:13,310] TC_01_Element_Display: Click To Register Button
+ [2022-07-31 00:39:13,594] TC_01_Element_Display: Verify Email Textbox is Display
+ [2022-07-31 00:39:13,882]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 00:39:13,886] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textboxthao@hmail.com
+ [2022-07-31 00:39:15,956] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is Display
+ [2022-07-31 00:39:16,000]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:39:16,000] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
+ [2022-07-31 00:39:18,060] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:39:18,107]  -------------------------- FAILED -------------------------- 
+ [2022-07-31 00:39:18,111] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
+ [2022-07-31 00:39:18,352] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
+ [2022-07-31 00:39:32,400]  -------------------------- FAILED -------------------------- 

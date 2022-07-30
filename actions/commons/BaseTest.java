@@ -47,8 +47,8 @@ public class BaseTest {
 			Assert.assertTrue(condition);
 			log.info(" -------------------------- PASSED -------------------------- ");
 		} catch (Throwable e) {
-			pass = false;
 			log.info(" -------------------------- FAILED -------------------------- ");
+			pass = false;
 
 			// Add lỗi vào ReportNG
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);

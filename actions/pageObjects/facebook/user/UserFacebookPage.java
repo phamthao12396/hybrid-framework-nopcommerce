@@ -36,4 +36,9 @@ public class UserFacebookPage extends BasePage {
 		waitForElemenClickable(driver, FacebookPageUI.REGISTER_POPUP_CLOSE_BUTTON);
 		clickToElement(driver, FacebookPageUI.REGISTER_POPUP_CLOSE_BUTTON);
 	}
+
+	public boolean isConfirmEmailTextboxDisplay() {
+		waitForElementVisible(driver, FacebookPageUI.CONFIRM_EMAIL_TEXTBOX);
+		return isElementDisplay(driver, FacebookPageUI.CONFIRM_EMAIL_TEXTBOX);
+	}
 }
