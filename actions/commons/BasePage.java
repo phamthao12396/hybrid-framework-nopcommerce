@@ -2,6 +2,7 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -513,6 +514,24 @@ public class BasePage {
 		getWebElement(driver, jQueryUploadPageUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
 
-	private long longTimeout = 30;
+	public boolean isElementUnDisplay(WebDriver driver, String locatorType) {
+		overrideGlobalTimeout(driver, shortTimeout);
+		List<WebElement> elements = getWebElements(driver, locatorType);
+		overrideGlobalTimeout(driver, longTimeout);
+		if (elements.size() == 0) {
+			return true;
+		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void overrideGlobalTimeout(WebDriver driver, long timeout) {
+		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	}
+
+	private long longTimeout = GlobalContants.LONG_TIME_OUT;
+	private long shortTimeout = GlobalContants.SHORT_TIME_OUT;
 
 }
