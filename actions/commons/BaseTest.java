@@ -1,5 +1,6 @@
 package commons;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -87,5 +88,21 @@ public class BaseTest {
 
 	public WebDriver getDriver() {
 		return this.driver;
+	}
+
+	public void deleteAllFileInFolder() {
+		try {
+			String pathFolderDownload = GlobalContants.SCREEN_SHOTS_FILE;
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+			System.out.println(listOfFiles.length + " screenshot has been deleted.");
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
 	}
 }

@@ -110,3 +110,45 @@
  [2022-07-31 11:09:50,614] Login: send key to password textbox: 123123
  [2022-07-31 11:09:50,693] Login: click to 'Login' button
  [2022-07-31 11:09:51,346] Login: Assert - My Account Link is display
+ [2022-07-31 11:26:10,804] Register: Click To Register link
+ [2022-07-31 11:26:11,308] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:26:11,412] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:26:11,503] Register: Send key to email textbox: email2506@hmail.vn
+ [2022-07-31 11:26:11,604] Register: Send key to password textbox: 123123
+ [2022-07-31 11:26:11,697] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:26:11,786] Register: click to register button
+ [2022-07-31 11:26:12,586] Register: Assert - get Register success message 
+ [2022-07-31 11:26:12,770] Login: log out after register success
+ [2022-07-31 11:26:13,504] Login: click to login link
+ [2022-07-31 11:26:13,940] Login: send key to email textbox: email2506@hmail.vn
+ [2022-07-31 11:26:14,023] Login: send key to password textbox: 123123
+ [2022-07-31 11:26:14,102] Login: click to 'Login' button
+ [2022-07-31 11:26:14,755] Login: Assert - My Account Link is display
+ [2022-07-31 11:27:56,599] Register: Click To Register link
+ [2022-07-31 11:27:57,092] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:27:57,197] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:27:57,290] Register: Send key to email textbox: email3250@hmail.vn
+ [2022-07-31 11:27:57,388] Register: Send key to password textbox: 123123
+ [2022-07-31 11:27:57,476] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:27:57,564] Register: click to register button
+ [2022-07-31 11:27:58,319] Register: Assert - get Register success message 
+ [2022-07-31 11:27:58,519] Login: log out after register success
+ [2022-07-31 11:27:59,182] Login: click to login link
+ [2022-07-31 11:27:59,600] Login: send key to email textbox: email3250@hmail.vn
+ [2022-07-31 11:27:59,693] Login: send key to password textbox: 123123
+ [2022-07-31 11:27:59,776] Login: click to 'Login' button
+ [2022-07-31 11:28:00,436] Login: Assert - My Account Link is display
+ [2022-07-31 11:30:07,229] Register: Click To Register link
+ [2022-07-31 11:30:07,721] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:30:07,827] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:30:07,921] Register: Send key to email textbox: email7559@hmail.vn
+ [2022-07-31 11:30:08,022] Register: Send key to password textbox: 123123
+ [2022-07-31 11:30:08,112] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:30:08,200] Register: click to register button
+ [2022-07-31 11:30:08,969] Register: Assert - get Register success message 
+ [2022-07-31 11:30:09,162] Login: log out after register success
+ [2022-07-31 11:30:09,993] Login: click to login link
+ [2022-07-31 11:30:10,437] Login: send key to email textbox: email7559@hmail.vn
+ [2022-07-31 11:30:10,519] Login: send key to password textbox: 123123
+ [2022-07-31 11:30:10,597] Login: click to 'Login' button
+ [2022-07-31 11:30:11,230] Login: Assert - My Account Link is display

@@ -6,18 +6,15 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import pageObjects.nopComerce.user.UserAddressesPageObject;
-import pageObjects.nopComerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopComerce.user.UserHomePageObjects;
 import pageObjects.nopComerce.user.UserLoginPageObject;
-import pageObjects.nopComerce.user.UserOrdersPageObject;
 import pageObjects.nopComerce.user.UserRegisterPageObject;
-import pageObjects.nopComerce.user.UserRewardPointsPageObject;
 
 public class Level_15_Attach_Screenshots extends BaseTest {
 	private WebDriver driver;
@@ -25,10 +22,11 @@ public class Level_15_Attach_Screenshots extends BaseTest {
 	private UserHomePageObjects homePageObj;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
-	private UserCustomerInfoPageObject customerInfoPage;
-	private UserOrdersPageObject orderPage;
-	private UserAddressesPageObject addressPage;
-	private UserRewardPointsPageObject rewardpointPage;
+
+	@BeforeSuite
+	public void deleteAllFilesInReportNGScreenshot() {
+		deleteAllFileInFolder();
+	}
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
