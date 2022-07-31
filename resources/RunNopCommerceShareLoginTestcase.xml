@@ -11,10 +11,10 @@
 	
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<test name="Run on Firefox">
-		<parameter name="browser" value="Firefox" />
+		<parameter name="browser" value="chrome" />
 		<classes>
-<!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
-			<class name ="com.nopcommerce.user.Level_17_Close_Browser_Driver" />
+			<class name ="com.nopcommerce.common.Register_Share_Cookie" />
+			<class name ="com.nopcommerce.user.Level_16_Share_Data_C" />
 		</classes>
 	</test>
 </suite>

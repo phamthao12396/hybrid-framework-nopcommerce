@@ -169,3 +169,26 @@
  [2022-07-31 11:46:35,272] Login: Assert - My Account Link is display
  [2022-07-31 15:32:34,643] 1 screenshot has been deleted.
  [2022-07-31 15:38:23,188] 1 screenshot has been deleted.
+ [2022-07-31 21:32:45,651] 1 screenshot has been deleted.
+ [2022-07-31 21:33:58,363] 1 screenshot has been deleted.
+ [2022-07-31 22:08:47,520] 0 screenshot has been deleted.
+ [2022-07-31 22:12:02,512] 1 screenshot has been deleted.
+ [2022-07-31 22:12:47,075] 1 screenshot has been deleted.
+ [2022-07-31 22:46:25,214] 0 screenshot has been deleted.
+ [2022-07-31 22:47:00,248] 1 screenshot has been deleted.
+ [2022-08-01 00:30:07,240] 0 screenshot has been deleted.
+ [2022-08-01 00:30:11,395] OS name = windows 10
+ [2022-08-01 00:30:11,395] Driver instance name = chromedriver: chrome on windows (c2e08cdfd56c6d998746754ef19c842b)
+ [2022-08-01 00:31:29,143] 1 screenshot has been deleted.
+ [2022-08-01 00:31:29,163] OS name = windows 10
+ [2022-08-01 00:31:29,163] Cannot invoke "Object.toString()" because "this.driver" is null
+ [2022-08-01 00:33:23,369] 0 screenshot has been deleted.
+ [2022-08-01 00:33:26,988] OS name = windows 10
+ [2022-08-01 00:33:26,988] Driver instance name = chromedriver: chrome on windows (fb96b9117a65e9a2a46ae78b2f906408)
+ [2022-08-01 00:35:23,963] 1 screenshot has been deleted.
+ [2022-08-01 00:35:55,420] 1 screenshot has been deleted.
+ [2022-08-01 00:36:30,114] 1 screenshot has been deleted.
+ [2022-08-01 00:37:20,577] 0 screenshot has been deleted.
+ [2022-08-01 00:38:34,079] 1 screenshot has been deleted.
+ [2022-08-01 00:38:39,112] OS name = windows 10
+ [2022-08-01 00:38:39,113] Driver instance name = firefoxdriver: firefox on windows (36f83af6-86f5-4db8-8eda-ebec96a97661)

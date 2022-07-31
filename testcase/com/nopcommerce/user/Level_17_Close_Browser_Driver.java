@@ -20,7 +20,7 @@ import commons.PageGeneratorManager;
 import pageObjects.nopComerce.user.UserHomePageObjects;
 import reportConfig.ExtentTestManager;
 
-public class Level_16_Share_Data_C extends BaseTest {
+public class Level_17_Close_Browser_Driver extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObjects homePageObj;
 
@@ -41,18 +41,18 @@ public class Level_16_Share_Data_C extends BaseTest {
 		ExtentTestManager.startTest(method.getName(), "TC01_Login");
 		ExtentTestManager.getTest().log(Status.INFO, "Login: set cookies");
 		Set<Cookie> cookies = Register_Share_Cookie.loggedCookies;
+		// driver = null;
 		homePageObj.setAllCookies(driver, cookies);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Login: refresh page");
 		homePageObj.refreshPage(driver);
-
 		ExtentTestManager.getTest().log(Status.INFO, "Login: Assert - check My Account Link is display");
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void AfterTest() {
-		driver.quit();
+		closeBrowserAndDriver();
 	}
 
 }
