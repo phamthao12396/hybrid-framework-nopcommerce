@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalContants;
+import commons.GlobalConstants;
 import pageObject.jQuery.dataTable.AdminHomePage;
 import pageObject.jQuery.dataTable.AdminLoginPage;
 import pageObject.jQuery.dataTable.PageGeneratorManager;
@@ -37,7 +37,7 @@ public class Level_10_Data_Table extends BaseTest {
 		password = "123456";
 		adminEmail = "user01";
 		adminPass = "guru99com";
-		driver = GetBrowserDriver(browserName, GlobalContants.TECHPANDA_USER_URL);
+		driver = GetBrowserDriver(browserName, GlobalConstants.TECHPANDA_USER_URL);
 		userHomePage = PageGeneratorManager.getHomePage(driver);
 	}
 
@@ -57,7 +57,7 @@ public class Level_10_Data_Table extends BaseTest {
 
 	@Test
 	public void TC02_Admin_page() {
-		userRegisterPage.openUrl(driver, GlobalContants.TECHPANDA_ADMIN_URL);
+		userRegisterPage.openUrl(driver, GlobalConstants.TECHPANDA_ADMIN_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		adminLoginPage.sendKeyToUserNameTextBox(adminEmail);
 		adminLoginPage.sendKeyToPasswordTextBox(adminPass);

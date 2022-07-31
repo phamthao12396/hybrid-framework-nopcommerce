@@ -1,4 +1,4 @@
-package commons;
+package reportConfig;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,32 +16,30 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import commons.BaseTest;
+import commons.GlobalConstants;
+
 public class ReportNGListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		log.info("---------- " + context.getName() + " STARTED test ----------");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		log.info("---------- " + context.getName() + " FINISHED test ----------");
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		log.info("---------- " + result.getName() + " STARTED test ----------");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		log.info("---------- " + result.getName() + " SUCCESS test ----------");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		try {
-			log.info("---------- " + result.getName() + " FAILED test ----------");
 			System.setProperty("org.uncommons.reportng.escape-output", "false");
 
 			Object testClass = result.getInstance();
@@ -65,12 +63,10 @@ public class ReportNGListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		log.info("---------- " + result.getName() + " SKIPPED test ----------");
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		log.info("---------- " + result.getName() + " FAILED WITH SUCCESS PERCENTAGE test ----------");
 	}
 
 	public String captureScreenshotImgFile(WebDriver driver, String screenshotName) {
@@ -79,7 +75,7 @@ public class ReportNGListener extends BaseTest implements ITestListener {
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-			String screenPath = GlobalContants.SCREEN_SHOTS_FILE + screenshotName + "_" + formater.format(calendar.getTime()) + ".png";
+			String screenPath = GlobalConstants.SCREEN_SHOTS_FILE + screenshotName + "_" + formater.format(calendar.getTime()) + ".png";
 			FileUtils.copyFile(source, new File(screenPath));
 			return screenPath;
 		} catch (IOException e) {

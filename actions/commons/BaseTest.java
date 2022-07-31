@@ -92,7 +92,7 @@ public class BaseTest {
 
 	public void deleteAllFileInFolder() {
 		try {
-			String pathFolderDownload = GlobalContants.SCREEN_SHOTS_FILE;
+			String pathFolderDownload = GlobalConstants.SCREEN_SHOTS_FILE;
 			File file = new File(pathFolderDownload);
 			File[] listOfFiles = file.listFiles();
 			for (int i = 0; i < listOfFiles.length; i++) {
@@ -100,9 +100,9 @@ public class BaseTest {
 					new File(listOfFiles[i].toString()).delete();
 				}
 			}
-			System.out.println(listOfFiles.length + " screenshot has been deleted.");
+			log.info(listOfFiles.length + " screenshot has been deleted.");
 		} catch (Exception e) {
-			System.out.print(e.getMessage());
+			log.info(e.getMessage());
 		}
 	}
 }

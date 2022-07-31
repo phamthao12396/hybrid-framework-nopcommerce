@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalContants;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObject.nopComerce.admin.AdminDashboardPage;
 import pageObject.nopComerce.admin.AdminLoginPage;
@@ -27,7 +27,7 @@ public class Level_08_Switch_Role extends BaseTest {
 	@Parameters({ "browser" })
 	@BeforeClass
 	public void BeforeTest(String browserName) {
-		driver = GetBrowserDriver(browserName, GlobalContants.USER_URL);
+		driver = GetBrowserDriver(browserName, GlobalConstants.USER_URL);
 		adminEmail = "admin@yourstore.com";
 		adminPassword = "admin";
 		usermail = "te20722@mail.us";
@@ -47,7 +47,7 @@ public class Level_08_Switch_Role extends BaseTest {
 		userHomePageObj.clickToLogOutLink();
 
 		// switch to admin url-login
-		userHomePageObj.openUrl(driver, GlobalContants.ADMIN_URL);
+		userHomePageObj.openUrl(driver, GlobalConstants.ADMIN_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		// login-> dashbroad
 		adminHomePage = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);

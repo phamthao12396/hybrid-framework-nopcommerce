@@ -512,7 +512,7 @@ public class BasePage {
 	}
 
 	public void uploadMultipleFile(WebDriver driver, String... fileName) {
-		String pathFile = GlobalContants.UPLOAD_FILE;
+		String pathFile = GlobalConstants.UPLOAD_FILE;
 		String fullFileName = "";
 		for (String name : fileName) {
 			fullFileName = fullFileName + pathFile + name + "\n";
@@ -541,7 +541,7 @@ public class BasePage {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 	}
 
-	private long longTimeout = GlobalContants.LONG_TIME_OUT;
-	private long shortTimeout = GlobalContants.SHORT_TIME_OUT;
+	private long longTimeout = GlobalConstants.LONG_TIME_OUT;
+	private long shortTimeout = GlobalConstants.SHORT_TIME_OUT;
 
 }
