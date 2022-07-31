@@ -1,12 +1,14 @@
- [2022-07-31 00:55:19,964] TC_01_Element_Display: Click To Register Button
- [2022-07-31 00:55:20,252] TC_01_Element_Display: Verify Email Textbox is Display
- [2022-07-31 00:55:20,559]  -------------------------- PASSED -------------------------- 
- [2022-07-31 00:55:20,563] TC_02_Element_UnDisplay_In_DOM: send Email to Email Textbox: thao@hmail.com
- [2022-07-31 00:55:22,654] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is Display
- [2022-07-31 00:55:22,698]  -------------------------- PASSED -------------------------- 
- [2022-07-31 00:55:22,698] TC_02_Element_UnDisplay_In_DOM: send Empty Email to Email Textbox
- [2022-07-31 00:55:24,755] TC_02_Element_UnDisplay_In_DOM: Verify Confirm Email Textbox is UnDisplay
- [2022-07-31 00:55:24,801]  -------------------------- PASSED -------------------------- 
- [2022-07-31 00:55:24,802] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
- [2022-07-31 00:55:25,041] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
- [2022-07-31 00:55:39,114]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 11:09:47,433] Register: Click To Register link
+ [2022-07-31 11:09:47,935] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:09:48,050] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:09:48,145] Register: Send key to email textbox: email9324@hmail.vn
+ [2022-07-31 11:09:48,246] Register: Send key to password textbox: 123123
+ [2022-07-31 11:09:48,345] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:09:48,433] Register: click to register button
+ [2022-07-31 11:09:49,184] Register: Assert - get Register success message 
+ [2022-07-31 11:09:49,386] Login: log out after register success
+ [2022-07-31 11:09:50,074] Login: click to login link
+ [2022-07-31 11:09:50,517] Login: send key to email textbox: email9324@hmail.vn
+ [2022-07-31 11:09:50,614] Login: send key to password textbox: 123123
+ [2022-07-31 11:09:50,693] Login: click to 'Login' button
+ [2022-07-31 11:09:51,346] Login: Assert - My Account Link is display

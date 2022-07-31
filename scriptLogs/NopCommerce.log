@@ -82,3 +82,31 @@
  [2022-07-31 00:55:24,802] TC_03_Element_UnDisplay_Not_In_DOM: Close register popup
  [2022-07-31 00:55:25,041] TC_03_Element_UnDisplay_Not_In_DOM: Verify Confirm Email Textbox is UnDisplay
  [2022-07-31 00:55:39,114]  -------------------------- PASSED -------------------------- 
+ [2022-07-31 11:08:52,003] Register: Click To Register link
+ [2022-07-31 11:08:52,535] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:08:52,650] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:08:52,740] Register: Send key to email textbox: email3406@hmail.vn
+ [2022-07-31 11:08:52,850] Register: Send key to password textbox: 123123
+ [2022-07-31 11:08:52,946] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:08:53,038] Register: click to register button
+ [2022-07-31 11:08:53,875] Register: Assert - get Register success message 
+ [2022-07-31 11:08:54,072] Login: log out after register success
+ [2022-07-31 11:08:54,735] Login: click to login link
+ [2022-07-31 11:08:55,169] Login: send key to email textbox: email3406@hmail.vn
+ [2022-07-31 11:08:55,253] Login: send key to password textbox: 123123
+ [2022-07-31 11:08:55,346] Login: click to 'Login' button
+ [2022-07-31 11:08:56,012] Login: Assert - My Account Link is display
+ [2022-07-31 11:09:47,433] Register: Click To Register link
+ [2022-07-31 11:09:47,935] Register: Send key to first name textbox: Thao
+ [2022-07-31 11:09:48,050] Register: Send key to last name textbox: Pham
+ [2022-07-31 11:09:48,145] Register: Send key to email textbox: email9324@hmail.vn
+ [2022-07-31 11:09:48,246] Register: Send key to password textbox: 123123
+ [2022-07-31 11:09:48,345] Register: Send key to confirm password textbox: 123123
+ [2022-07-31 11:09:48,433] Register: click to register button
+ [2022-07-31 11:09:49,184] Register: Assert - get Register success message 
+ [2022-07-31 11:09:49,386] Login: log out after register success
+ [2022-07-31 11:09:50,074] Login: click to login link
+ [2022-07-31 11:09:50,517] Login: send key to email textbox: email9324@hmail.vn
+ [2022-07-31 11:09:50,614] Login: send key to password textbox: 123123
+ [2022-07-31 11:09:50,693] Login: click to 'Login' button
+ [2022-07-31 11:09:51,346] Login: Assert - My Account Link is display
