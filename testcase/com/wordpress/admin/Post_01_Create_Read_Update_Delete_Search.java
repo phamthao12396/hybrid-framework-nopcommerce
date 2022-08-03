@@ -30,6 +30,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	@Parameters({ "browser", "urlAdmin" })
 	@BeforeClass
 	public void beforeClass(String browserName, String adminUrl) {
+		deleteAllFileInFolder();
 		date = new Date();
 		username = "phamthao12396";
 		password = "automation";
