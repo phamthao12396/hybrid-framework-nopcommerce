@@ -46,6 +46,7 @@ public class Level_17_Close_Browser_Driver extends BaseTest {
 
 		ExtentTestManager.getTest().log(Status.INFO, "Login: refresh page");
 		homePageObj.refreshPage(driver);
+
 		ExtentTestManager.getTest().log(Status.INFO, "Login: Assert - check My Account Link is display");
 		Assert.assertTrue(homePageObj.isMyAccountLinkDisplayed());
 	}
