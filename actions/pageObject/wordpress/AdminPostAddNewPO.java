@@ -1,4 +1,4 @@
-package pageObject.wordpress.admin;
+package pageObject.wordpress;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import pageUIs.wordpress.admin.AdminPostAddNewPageUI;
+import commons.GlobalConstants;
+import pageUIs.wordpress.AdminPostAddNewPageUI;
 
 public class AdminPostAddNewPO extends BasePage {
 	WebDriver driver;
@@ -16,7 +17,6 @@ public class AdminPostAddNewPO extends BasePage {
 	}
 
 	public void inputToAddNewPostTitle(String postTitle) {
-		closeDialog();
 		waitForElementVisible(driver, AdminPostAddNewPageUI.ADD_TITLE_TEXTAREA);
 		sendkeyToElement(driver, AdminPostAddNewPageUI.ADD_TITLE_TEXTAREA, postTitle);
 	}
@@ -40,10 +40,18 @@ public class AdminPostAddNewPO extends BasePage {
 		return isElementDisplay(driver, AdminPostAddNewPageUI.POST_PUBLISHED_SUCCESS_MESSAGE, message);
 	}
 
-	private void closeDialog() {
+	public void closeDialog() {
+		overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIME_OUT);
 		List<WebElement> elements = getWebElements(driver, AdminPostAddNewPageUI.CLOSE_DIALOG_BUTTON);
+		overrideGlobalTimeout(driver, GlobalConstants.LONG_TIME_OUT);
 		if (elements.size() > 0) {
 			elements.get(0).click();
 		}
 	}
+
+	public AdminPostsAllPostsPO openAdminAllPostsPage(String urlAdminPosts) {
+		openUrl(driver, urlAdminPosts);
+		return PageGeneratorManager.getAdminPostsAllPostsPage(driver);
+	}
+
 }

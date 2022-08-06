@@ -45,7 +45,8 @@ public class ReportNGListener extends BaseTest implements ITestListener {
 			Object testClass = result.getInstance();
 			WebDriver webDriver = ((BaseTest) testClass).getDriver();
 
-			String screenshotPath = captureScreenshotImgFile(webDriver, result.getName());
+			// -------------------screenshot capture function
+			String screenshotPath = captureScreenshotBase64(webDriver, result.getName());
 			Reporter.getCurrentTestResult();
 			// take screenshot Image file and attach to reportNG
 			// Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100'

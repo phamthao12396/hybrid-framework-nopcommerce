@@ -1,0 +1,28 @@
+ [2022-08-07 02:59:44,703] 0 screenshot has been deleted.
+ [2022-08-07 02:59:47,825] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-07 02:59:47,828] Pre-Condition: Input Username: phamthao12396
+ [2022-08-07 02:59:48,013] Pre-Condition: Input Password: automation
+ [2022-08-07 02:59:48,114] Pre-Condition: Click Login button
+ [2022-08-07 02:59:50,206] TC01_Create
+ [2022-08-07 02:59:50,212] create 00: save the 'Posts' Menu link
+ [2022-08-07 02:59:50,212] Create 01: click To 'Posts' menu
+ [2022-08-07 02:59:51,275] Create 02: click 'Add New' button 
+ [2022-08-07 02:59:53,176] Create 03: close Dialog if appear
+ [2022-08-07 02:59:53,472] Create 03: Add Title: Automation Title 41895
+ [2022-08-07 02:59:53,926] Create 04: Add body block: automation body 89632
+ [2022-08-07 02:59:54,852] Create 05: click button 'Publish'
+ [2022-08-07 02:59:55,386] Create 06: Verify message Post Published
+ [2022-08-07 02:59:56,870] TC02_Search_And_Read
+ [2022-08-07 02:59:56,870] Search_And_Read 01: Open Posts Search link
+ [2022-08-07 02:59:58,847] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-07 02:59:58,965] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-07 03:00:00,678] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 41895'
+ [2022-08-07 03:00:00,732] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-07 03:00:00,788] Search_And_Read 06: Open End User site
+ [2022-08-07 03:00:01,896] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-07 03:00:02,013] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-07 03:00:02,911] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-07 03:00:03,018] Search_And_Read 10: Click to Post title 
+ [2022-08-07 03:00:03,876] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-07 03:00:03,996] OS name = windows 10
+ [2022-08-07 03:00:03,996] Driver instance name = edgedriver: msedge on windows (7032e4acea5733dc2b32308457fa08a6)

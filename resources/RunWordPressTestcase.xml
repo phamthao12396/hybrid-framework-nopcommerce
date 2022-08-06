@@ -5,7 +5,7 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="reportConfig.ReportNGListener" />
-		<listener class-name="reportConfig.ExtentTestListener" />
+<!-- 		<listener class-name="reportConfig.ExtentTestListener" /> -->
 		<listener class-name="commons.MethodListener" />
 	</listeners>
 	
@@ -15,7 +15,7 @@
 		<parameter name="browser" value="edge" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
-			<class name ="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search" />
+			<class name ="com.wordpress.Post_01_Create_Read_Update_Delete_Search" />
 		</classes>
 	</test>
 </suite>

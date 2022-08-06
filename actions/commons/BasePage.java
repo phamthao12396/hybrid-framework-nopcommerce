@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import pageObject.wordpress.PageGeneratorManager;
+import pageObject.wordpress.UserHomePageObject;
 import pageObjects.nopComerce.user.UserAddressesPageObject;
 import pageObjects.nopComerce.user.UserOrdersPageObject;
 import pageObjects.nopComerce.user.UserRewardPointsPageObject;
@@ -479,24 +481,24 @@ public class BasePage {
 	public void waitForAlertPresence(WebDriver driver) {
 		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.alertIsPresent());
 	}
-
-	public UserOrdersPageObject clickToOrdersLink(WebDriver driver) {
-		waitForElemenClickable(driver, BasePageUI.ORDERS_LINK);
-		clickToElement(driver, BasePageUI.ORDERS_LINK);
-		return PageGeneratorManager.getUserOrderPage(driver);
-	}
-
-	public UserAddressesPageObject clickToAddressesLink(WebDriver driver) {
-		waitForElemenClickable(driver, BasePageUI.ADDRESSES_LINK);
-		clickToElement(driver, BasePageUI.ADDRESSES_LINK);
-		return PageGeneratorManager.getAddressesPage(driver);
-	}
-
-	public UserRewardPointsPageObject clickToRewardPointLink(WebDriver driver) {
-		waitForElemenClickable(driver, BasePageUI.REWARD_POINT_LINK);
-		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
-		return PageGeneratorManager.getRewardPointPage(driver);
-	}
+	// level 7+8 -navigation page, switch role
+	// public UserOrdersPageObject clickToOrdersLink(WebDriver driver) {
+	// waitForElemenClickable(driver, BasePageUI.ORDERS_LINK);
+	// clickToElement(driver, BasePageUI.ORDERS_LINK);
+	// return PageGeneratorManager.getUserOrderPage(driver);
+	// }
+	//
+	// public UserAddressesPageObject clickToAddressesLink(WebDriver driver) {
+	// waitForElemenClickable(driver, BasePageUI.ADDRESSES_LINK);
+	// clickToElement(driver, BasePageUI.ADDRESSES_LINK);
+	// return PageGeneratorManager.getAddressesPage(driver);
+	// }
+	//
+	// public UserRewardPointsPageObject clickToRewardPointLink(WebDriver driver) {
+	// waitForElemenClickable(driver, BasePageUI.REWARD_POINT_LINK);
+	// clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
+	// return PageGeneratorManager.getRewardPointPage(driver);
+	// }
 
 	private String getDynamicXpath(String locatorType, String... dynamicValue) {
 		if (locatorType.startsWith("Xpath") || locatorType.startsWith("XPATH") || locatorType.startsWith("XPath") || locatorType.startsWith("xpath")) {
@@ -550,6 +552,11 @@ public class BasePage {
 		for (Cookie cookie : cookies) {
 			driver.manage().addCookie(cookie);
 		}
+	}
+
+	public UserHomePageObject getUserHomePage(WebDriver driver, String urlUserHomePage) {
+		openUrl(driver, urlUserHomePage);
+		return pageObject.wordpress.PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIME_OUT;

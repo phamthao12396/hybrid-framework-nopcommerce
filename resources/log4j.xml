@@ -43,7 +43,7 @@
 		<appender-ref ref="testng" />
 	</category>
 
-	<category name="com.fackebook.user">
+	<category name="com.wordpress">
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />
