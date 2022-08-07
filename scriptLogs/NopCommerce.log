@@ -542,3 +542,226 @@
  [2022-08-07 03:00:03,876] Search_And_Read 11: Verify Post information display at Post Detail page
  [2022-08-07 03:00:03,996] OS name = windows 10
  [2022-08-07 03:00:03,996] Driver instance name = edgedriver: msedge on windows (7032e4acea5733dc2b32308457fa08a6)
+ [2022-08-08 02:11:54,450] 0 screenshot has been deleted.
+ [2022-08-08 02:12:04,080] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:12:04,082] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:12:04,293] Pre-Condition: Input Password: automation
+ [2022-08-08 02:12:04,385] Pre-Condition: Click Login button
+ [2022-08-08 02:12:07,437] TC01_Create
+ [2022-08-08 02:12:07,437] create 00: save the 'Posts' Menu link
+ [2022-08-08 02:12:07,437] Create 01: click To 'Posts' menu
+ [2022-08-08 02:12:08,528] Create 02: click 'Add New' button 
+ [2022-08-08 02:12:10,685] Create 03: close Dialog if appear
+ [2022-08-08 02:12:10,837] Create 03: Add Title: Automation Title 93326
+ [2022-08-08 02:12:11,295] Create 04.1: click to body block 
+ [2022-08-08 02:12:11,572] Create 04.2: Add body block: automation body 29932
+ [2022-08-08 02:12:12,205] Create 05: click button 'Publish'
+ [2022-08-08 02:12:12,550] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:12:12,680] Create 06: Verify message Post Published
+ [2022-08-08 02:12:14,224] TC02_Search_And_Read
+ [2022-08-08 02:12:14,224] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:12:16,232] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:12:16,346] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:12:18,041] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 93326'
+ [2022-08-08 02:12:18,256] Update 01: Open Admin site
+ [2022-08-08 02:12:18,414] OS name = windows 10
+ [2022-08-08 02:12:18,414] Driver instance name = edgedriver: msedge on windows (61795490a98d2157fee0839151f41a5a)
+ [2022-08-08 02:14:55,526] 0 screenshot has been deleted.
+ [2022-08-08 02:15:00,033] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:15:00,036] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:15:00,215] Pre-Condition: Input Password: automation
+ [2022-08-08 02:15:00,314] Pre-Condition: Click Login button
+ [2022-08-08 02:15:02,457] TC01_Create
+ [2022-08-08 02:15:02,457] create 00: save the 'Posts' Menu link
+ [2022-08-08 02:15:02,457] Create 01: click To 'Posts' menu
+ [2022-08-08 02:15:03,620] Create 02: click 'Add New' button 
+ [2022-08-08 02:15:05,609] Create 03: close Dialog if appear
+ [2022-08-08 02:15:06,091] Create 03: Add Title: Automation Title 94423
+ [2022-08-08 02:15:06,566] Create 04.1: click to body block 
+ [2022-08-08 02:15:06,845] Create 04.2: Add body block: automation body 52881
+ [2022-08-08 02:15:07,525] Create 05: click button 'Publish'
+ [2022-08-08 02:15:07,848] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:15:08,000] Create 06: Verify message Post Published
+ [2022-08-08 02:15:09,510] TC02_Search_And_Read
+ [2022-08-08 02:15:09,510] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:15:10,529] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:15:10,660] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:15:12,393] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 94423'
+ [2022-08-08 02:15:12,453] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:15:12,510] Search_And_Read 06: Open End User site
+ [2022-08-08 02:15:13,611] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-08 02:15:13,732] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-08 02:15:14,669] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-08 02:15:14,790] Search_And_Read 10: Click to Post title 
+ [2022-08-08 02:15:15,643] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-08 02:15:15,847] Update 01: Open Admin site
+ [2022-08-08 02:15:16,627] Update 02: click To 'Posts' menu
+ [2022-08-08 02:15:46,826] OS name = windows 10
+ [2022-08-08 02:15:46,827] Driver instance name = chromedriver: chrome on windows (e1e03c8a4a0810cae29f7ab45a4ea922)
+ [2022-08-08 02:19:27,803] 0 screenshot has been deleted.
+ [2022-08-08 02:19:31,596] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:19:31,598] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:19:31,780] Pre-Condition: Input Password: automation
+ [2022-08-08 02:19:31,877] Pre-Condition: Click Login button
+ [2022-08-08 02:19:34,129] TC01_Create
+ [2022-08-08 02:19:34,129] Create 01: click To 'Posts' menu
+ [2022-08-08 02:19:35,304] Create 02: click 'Add New' button 
+ [2022-08-08 02:19:37,523] Create 03: close Dialog if appear
+ [2022-08-08 02:19:37,732] Create 03: Add Title: Automation Title 19093
+ [2022-08-08 02:19:38,161] Create 04.1: click to body block 
+ [2022-08-08 02:19:38,408] Create 04.2: Add body block: automation body 98749
+ [2022-08-08 02:19:39,101] Create 05: click button 'Publish'
+ [2022-08-08 02:19:39,408] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:19:39,563] Create 06: Verify message Post Published
+ [2022-08-08 02:19:41,019] TC02_Search_And_Read
+ [2022-08-08 02:19:41,019] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:19:42,019] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:19:42,146] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:19:43,863] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 19093'
+ [2022-08-08 02:19:43,918] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:19:43,971] Search_And_Read 06: Open End User site
+ [2022-08-08 02:19:45,108] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-08 02:19:45,229] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-08 02:19:46,238] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-08 02:19:46,355] Search_And_Read 10: Click to Post title 
+ [2022-08-08 02:19:47,296] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-08 02:19:47,422] Update 01: Open Admin site
+ [2022-08-08 02:19:48,486] Update 02: click To 'Posts' menu
+ [2022-08-08 02:19:49,593] Update 03: Input Text to search textbox: 
+ [2022-08-08 02:19:49,702] Update 04: Click to 'Search Posts' button 
+ [2022-08-08 02:19:51,382] Update 05: Verify Search Table contains title: 'Automation Title 19093'
+ [2022-08-08 02:19:51,437] Update 06: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:19:51,486] Update 07: Click to Post title and get 'Edit Post Page'
+ [2022-08-08 02:20:21,674] OS name = windows 10
+ [2022-08-08 02:20:21,674] Driver instance name = chromedriver: chrome on windows (1531eab72edf83067ba3456e6105f0e1)
+ [2022-08-08 02:22:13,484] 0 screenshot has been deleted.
+ [2022-08-08 02:22:17,203] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:22:17,206] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:22:17,416] Pre-Condition: Input Password: automation
+ [2022-08-08 02:22:17,514] Pre-Condition: Click Login button
+ [2022-08-08 02:22:19,705] TC01_Create
+ [2022-08-08 02:22:19,705] Create 01: click To 'Posts' menu
+ [2022-08-08 02:22:20,968] Create 02: click 'Add New' button 
+ [2022-08-08 02:22:23,152] Create 03: close Dialog if appear
+ [2022-08-08 02:22:23,624] Create 03: Add Title: Automation Title 22588
+ [2022-08-08 02:22:24,098] Create 04.1: click to body block 
+ [2022-08-08 02:22:24,324] Create 04.2: Add body block: automation body 60058
+ [2022-08-08 02:22:25,078] Create 05: click button 'Publish'
+ [2022-08-08 02:22:25,397] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:22:25,538] Create 06: Verify message Post Published
+ [2022-08-08 02:22:26,955] TC02_Search_And_Read
+ [2022-08-08 02:22:26,955] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:22:27,969] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:22:28,092] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:22:29,824] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 22588'
+ [2022-08-08 02:22:29,883] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:22:29,941] Search_And_Read 06: Open End User site
+ [2022-08-08 02:22:31,074] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-08 02:22:31,191] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-08 02:22:32,521] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-08 02:22:32,634] Search_And_Read 10: Click to Post title 
+ [2022-08-08 02:22:33,593] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-08 02:22:33,704] Update 01: Open Admin site
+ [2022-08-08 02:22:34,823] Update 02: click To 'Posts' menu
+ [2022-08-08 02:22:35,846] Update 03: Input Text to search textbox: 
+ [2022-08-08 02:22:35,956] Update 04: Click to 'Search Posts' button 
+ [2022-08-08 02:22:37,622] Update 05: Verify Search Table contains title: 'Automation Title 22588'
+ [2022-08-08 02:22:37,682] Update 06: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:22:37,727] Update 07: Click to Post title and get 'Edit Post Page'
+ [2022-08-08 02:23:07,897] OS name = windows 10
+ [2022-08-08 02:23:07,897] Driver instance name = chromedriver: chrome on windows (1db6703412561511637371612e00dc59)
+ [2022-08-08 02:29:45,646] 0 screenshot has been deleted.
+ [2022-08-08 02:29:49,499] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:29:49,501] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:29:49,681] Pre-Condition: Input Password: automation
+ [2022-08-08 02:29:49,777] Pre-Condition: Click Login button
+ [2022-08-08 02:29:51,997] TC01_Create
+ [2022-08-08 02:29:51,997] Create 01: click To 'Posts' menu
+ [2022-08-08 02:29:53,113] Create 02: click 'Add New' button 
+ [2022-08-08 02:29:55,262] Create 03: close Dialog if appear
+ [2022-08-08 02:29:55,586] Create 03: Add Title: Automation Title 8083
+ [2022-08-08 02:29:56,010] Create 04.1: click to body block 
+ [2022-08-08 02:29:56,248] Create 04.2: Add body block: automation body 68117
+ [2022-08-08 02:29:56,892] Create 05: click button 'Publish'
+ [2022-08-08 02:29:57,220] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:29:57,390] Create 06: Verify message Post Published
+ [2022-08-08 02:29:58,927] TC02_Search_And_Read
+ [2022-08-08 02:29:58,927] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:29:59,926] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:30:00,061] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:30:01,791] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 8083'
+ [2022-08-08 02:30:01,851] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:30:01,911] Search_And_Read 06: Open End User site
+ [2022-08-08 02:30:03,037] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-08 02:30:03,161] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-08 02:30:04,098] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-08 02:30:04,208] Search_And_Read 10: Click to Post title 
+ [2022-08-08 02:30:05,071] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-08 02:30:05,280] Update 01: Open Admin site
+ [2022-08-08 02:30:06,382] Update 02: click To 'Posts' menu
+ [2022-08-08 02:30:07,447] Update 03: Input Text to search textbox: 
+ [2022-08-08 02:30:07,556] Update 04: Click to 'Search Posts' button 
+ [2022-08-08 02:30:09,300] Update 05: Verify Search Table contains title: 'Automation Title 8083'
+ [2022-08-08 02:30:09,351] Update 06: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:30:09,399] Update 07: Click to Post title and get 'Edit Post Page'
+ [2022-08-08 02:30:11,312] Update 08: Edit Post Title
+ [2022-08-08 02:30:11,799] Update 09.1: Edit Post Body
+ [2022-08-08 02:30:11,800] Update 09.2: Edit Post Body
+ [2022-08-08 02:30:12,429] Update 10: Click Update button
+ [2022-08-08 02:30:12,564] Update 11: Verify message 'Posts Updated'
+ [2022-08-08 02:30:13,835] Update 12: Open Posts Search link
+ [2022-08-08 02:30:14,923] Update 13: Input Text to search textbox: 
+ [2022-08-08 02:30:45,115] OS name = windows 10
+ [2022-08-08 02:30:45,115] Driver instance name = chromedriver: chrome on windows (a9aa020899871a39816b55d24f0efd68)
+ [2022-08-08 02:33:17,508] 0 screenshot has been deleted.
+ [2022-08-08 02:33:20,583] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-08 02:33:20,586] Pre-Condition: Input Username: phamthao12396
+ [2022-08-08 02:33:20,790] Pre-Condition: Input Password: automation
+ [2022-08-08 02:33:20,898] Pre-Condition: Click Login button
+ [2022-08-08 02:33:23,083] TC01_Create
+ [2022-08-08 02:33:23,083] Create 01: click To 'Posts' menu
+ [2022-08-08 02:33:24,203] Create 02: click 'Add New' button 
+ [2022-08-08 02:33:26,532] Create 03: close Dialog if appear
+ [2022-08-08 02:33:27,169] Create 03: Add Title: Automation Title 72856
+ [2022-08-08 02:33:28,474] Create 04.1: click to body block 
+ [2022-08-08 02:33:28,909] Create 04.2: Add body block: automation body 82063
+ [2022-08-08 02:33:29,618] Create 05: click button 'Publish'
+ [2022-08-08 02:33:30,019] Create 05: click button 'Publish' confirm
+ [2022-08-08 02:33:30,187] Create 06: Verify message Post Published
+ [2022-08-08 02:33:31,664] TC02_Search_And_Read
+ [2022-08-08 02:33:31,664] Search_And_Read 01: Open Posts Search link
+ [2022-08-08 02:33:33,813] Search_And_Read 02: Input Text to search textbox: 
+ [2022-08-08 02:33:33,932] Search_And_Read 03: Click to 'Search Posts' button 
+ [2022-08-08 02:33:35,667] Search_And_Read 04: Verify Search Table contains title: 'Automation Title 72856'
+ [2022-08-08 02:33:35,722] Search_And_Read 05: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:33:35,778] Search_And_Read 06: Open End User site
+ [2022-08-08 02:33:36,912] Search_And_Read 07: Input Text to search textbox: 
+ [2022-08-08 02:33:37,035] Search_And_Read 08: Click to 'Search Posts' button 
+ [2022-08-08 02:33:37,954] Search_And_Read 09: Verify Post information display at Home Page
+ [2022-08-08 02:33:38,070] Search_And_Read 10: Click to Post title 
+ [2022-08-08 02:33:39,032] Search_And_Read 11: Verify Post information display at Post Detail page
+ [2022-08-08 02:33:39,143] Update 01: Open Admin site
+ [2022-08-08 02:33:40,246] Update 02: click To 'Posts' menu
+ [2022-08-08 02:33:41,314] Update 03: Input Text to search textbox: 
+ [2022-08-08 02:33:41,431] Update 04: Click to 'Search Posts' button 
+ [2022-08-08 02:33:43,130] Update 05: Verify Search Table contains title: 'Automation Title 72856'
+ [2022-08-08 02:33:43,191] Update 06: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:33:43,240] Update 07: Click to Post title and get 'Edit Post Page'
+ [2022-08-08 02:33:45,127] Update 08: Edit Post Title
+ [2022-08-08 02:33:45,647] Update 09.1: Edit Post Body
+ [2022-08-08 02:33:45,647] Update 09.2: Edit Post Body
+ [2022-08-08 02:33:46,242] Update 10: Click Update button
+ [2022-08-08 02:33:46,362] Update 11: Verify message 'Posts Updated'
+ [2022-08-08 02:33:47,766] Update 12: Open Posts Search link
+ [2022-08-08 02:33:49,720] Update 13: Input Text to search textbox: 
+ [2022-08-08 02:33:49,831] Update 14: Click to 'Search Posts' button 
+ [2022-08-08 02:33:51,537] Update 15: Verify Search Table contains title: 'Edit Title63353'
+ [2022-08-08 02:33:51,594] Update 16: Verify Search Table contains Author: 'Automation Study'
+ [2022-08-08 02:33:51,639] Update 17: Open End User site
+ [2022-08-08 02:33:52,435] Update 18: Input Text to search textbox: 
+ [2022-08-08 02:33:52,539] Update 19: Click to 'Search Posts' button 
+ [2022-08-08 02:33:53,366] Update 20: Verify Post information display at Home Page
+ [2022-08-08 02:33:53,486] Update 21: Click to Post title 
+ [2022-08-08 02:33:54,333] Update 22: Verify Post information display at Post Detail page
+ [2022-08-08 02:33:54,449] OS name = windows 10
+ [2022-08-08 02:33:54,449] Driver instance name = chromedriver: chrome on windows (2726563eb8f7b8ee0c42432789c65bf0)

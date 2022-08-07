@@ -79,23 +79,23 @@ public class Level_07_Navigation_page extends BaseTest {
 	@Test
 	public void TC04_Navigation_Page() {
 
-		orderPage = customerInfoPage.clickToOrdersLink(driver);
-		System.out.println("// customer info -> orders");
-
-		addressPage = orderPage.clickToAddressesLink(driver);
-		System.out.println("// orders -> addresses");
-
-		rewardpointPage = addressPage.clickToRewardPointLink(driver);
-		System.out.println("// addresses -> reward points");
-
-		addressPage = rewardpointPage.clickToAddressesLink(driver);
-		System.out.println("// reward point -> addresses");
-
-		orderPage = addressPage.clickToOrdersLink(driver);
-		System.out.println("// addresses -> orders");
-
-		rewardpointPage = orderPage.clickToRewardPointLink(driver);
-		System.out.println("// orders -> reward point");
+		// orderPage = customerInfoPage.clickToOrdersLink(driver);
+		// System.out.println("// customer info -> orders");
+		//
+		// addressPage = orderPage.clickToAddressesLink(driver);
+		// System.out.println("// orders -> addresses");
+		//
+		// rewardpointPage = addressPage.clickToRewardPointLink(driver);
+		// System.out.println("// addresses -> reward points");
+		//
+		// addressPage = rewardpointPage.clickToAddressesLink(driver);
+		// System.out.println("// reward point -> addresses");
+		//
+		// orderPage = addressPage.clickToOrdersLink(driver);
+		// System.out.println("// addresses -> orders");
+		//
+		// rewardpointPage = orderPage.clickToRewardPointLink(driver);
+		// System.out.println("// orders -> reward point");
 	}
 
 	@AfterClass

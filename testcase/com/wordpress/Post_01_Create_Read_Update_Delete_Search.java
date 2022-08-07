@@ -28,12 +28,13 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	AdminPostsAllPostsPO adminAllPostsPage;
 	UserHomePageObject userHomePage;
 	UserPostDetailPageObject userDetailPost;
-	String username, password, postTitle, postBody, urlAdminPosts, urlUserHomePage, author, currentDay;
+	String username, password, postTitle, editTitle, editBody, postBody, urlAllPostsPage, urlAdminPage, urlUserHomePage, author, currentDay;
 
 	@Parameters({ "browser", "urlAdmin" })
 	@BeforeClass
 	public void beforeClass(String browserName, String adminUrl) {
 		deleteAllFileInFolder();
+		urlAdminPage = adminUrl;
 		urlUserHomePage = "http://localhost/";
 		username = "phamthao12396";
 		author = "Automation Study";
@@ -41,6 +42,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		password = "automation";
 		postTitle = "Automation Title " + randInt();
 		postBody = "automation body " + randInt();
+		editTitle = "Edit Title" + randInt();
+		editBody = "Edit Body" + randInt();
 		driver = GetBrowserDriver(browserName, adminUrl);
 		log.info("Pre-Condition: Open Browser and Login Admin Page");
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
@@ -58,13 +61,12 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	@Test
 	public void Post_01_Create() {
 		log.info("TC01_Create");
-		log.info("create 00: save the 'Posts' Menu link");
-
 		log.info("Create 01: click To 'Posts' menu");
 		adminAllPostsPage = dashboardPage.clickToPostsMenu();
 
+		urlAllPostsPage = dashboardPage.getPageURL(driver);
+
 		log.info("Create 02: click 'Add New' button ");
-		urlAdminPosts = dashboardPage.getPageURL(driver);
 		postAddNewPage = adminAllPostsPage.clickToAddNewButton();
 
 		log.info("Create 03: close Dialog if appear");
@@ -73,21 +75,26 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		log.info("Create 03: Add Title: " + postTitle);
 		postAddNewPage.inputToAddNewPostTitle(postTitle);
 
-		log.info("Create 04: Add body block: " + postBody);
+		log.info("Create 04.1: click to body block ");
+		postAddNewPage.clickToAddNewPostBody();
+
+		log.info("Create 04.2: Add body block: " + postBody);
 		postAddNewPage.inputToAddNewPostBody(postBody);
 
 		log.info("Create 05: click button 'Publish'");
-		postAddNewPage.clickToPublishButton();
+		postAddNewPage.clickToPublishOrUpdateButton();
+		log.info("Create 05: click button 'Publish' confirm");
+		postAddNewPage.clickToPublishConfirmButton();
 
 		log.info("Create 06: Verify message Post Published");
-		assertTrue(postAddNewPage.isPublishedMessageDisplay("Post published."));
+		assertTrue(postAddNewPage.isPublishedAndUpdatedMessageDisplay("Post published."));
 	}
 
 	@Test
 	public void Post_02_Search_And_Read() {
 		log.info("TC02_Search_And_Read");
 		log.info("Search_And_Read 01: Open Posts Search link");
-		adminAllPostsPage = postAddNewPage.openAdminAllPostsPage(urlAdminPosts);
+		adminAllPostsPage = postAddNewPage.openAdminAllPostsPage(urlAllPostsPage);
 
 		log.info("Search_And_Read 02: Input Text to search textbox: ");
 		adminAllPostsPage.inputToSearchTextbox(postTitle);
@@ -126,7 +133,77 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 
 	@Test
 	public void Post_03_Update() {
+		log.info("Update 01: Open Admin site");
+		dashboardPage = userDetailPost.getAdminPage(driver, urlAdminPage);
 
+		log.info("Update 02: click To 'Posts' menu");
+		adminAllPostsPage = dashboardPage.clickToPostsMenu();
+
+		log.info("Update 03: Input Text to search textbox: ");
+		adminAllPostsPage.inputToSearchTextbox(postTitle);
+
+		log.info("Update 04: Click to 'Search Posts' button ");
+		adminAllPostsPage.clickToSearchButton();
+
+		log.info("Update 05: Verify Search Table contains title: '" + postTitle + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("title"), postTitle);
+
+		log.info("Update 06: Verify Search Table contains Author: '" + author + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("author"), author);
+
+		log.info("Update 07: Click to Post title and get 'Edit Post Page'");
+		postAddNewPage = adminAllPostsPage.clickToPostTitle(postTitle);
+
+		log.info("Update 08: Edit Post Title");
+		postAddNewPage.inputToAddNewPostTitle(editTitle);
+
+		log.info("Update 09.1: Clear Text at Post Body");
+
+		log.info("Update 09.2: Edit Post Body");
+		postAddNewPage.inputToAddNewPostBody(editBody);
+
+		log.info("Update 10: Click Update button");
+		postAddNewPage.clickToPublishOrUpdateButton();
+
+		log.info("Update 11: Verify message 'Posts Updated'");
+		Assert.assertTrue(postAddNewPage.isPublishedAndUpdatedMessageDisplay("Post updated."));
+
+		log.info("Update 12: Open Posts Search link");
+		adminAllPostsPage = postAddNewPage.openAdminAllPostsPage(urlAllPostsPage);
+
+		log.info("Update 13: Input Text to search textbox: ");
+		adminAllPostsPage.inputToSearchTextbox(editTitle);
+
+		log.info("Update 14: Click to 'Search Posts' button ");
+		adminAllPostsPage.clickToSearchButton();
+
+		log.info("Update 15: Verify Search Table contains title: '" + editTitle + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("title"), editTitle);
+
+		log.info("Update 16: Verify Search Table contains Author: '" + author + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("author"), author);
+
+		log.info("Update 17: Open End User site");
+		userHomePage = adminAllPostsPage.getUserHomePage(driver, urlUserHomePage);
+
+		log.info("Update 18: Input Text to search textbox: ");
+		userHomePage.inputToSearchTextbox(editTitle);
+
+		log.info("Update 19: Click to 'Search Posts' button ");
+		userHomePage.clickToSearchButton();
+
+		log.info("Update 20: Verify Post information display at Home Page");
+		Assert.assertTrue(userHomePage.isPostsDisplayWithPostsTitle(editTitle));
+		Assert.assertTrue(userHomePage.isPostsInforDisplayWithPostAuthor(editTitle, author));
+		Assert.assertTrue(userHomePage.isPostsInforDisplayWithTime(editTitle, currentDay));
+
+		log.info("Update 21: Click to Post title ");
+		userDetailPost = userHomePage.clickToPostsTitle(editTitle);
+
+		log.info("Update 22: Verify Post information display at Post Detail page");
+		Assert.assertTrue(userDetailPost.isPostsDisplayWithPostsTitle(editTitle));
+		Assert.assertTrue(userDetailPost.isPostsInforDisplayWithPostAuthor(editTitle, author));
+		Assert.assertTrue(userDetailPost.isPostsInforDisplayWithTime(editTitle, currentDay));
 	}
 
 	@Test

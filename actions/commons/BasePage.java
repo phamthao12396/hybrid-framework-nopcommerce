@@ -17,11 +17,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import pageObject.wordpress.PageGeneratorManager;
+import pageObject.wordpress.AdminDashboardPO;
 import pageObject.wordpress.UserHomePageObject;
-import pageObjects.nopComerce.user.UserAddressesPageObject;
-import pageObjects.nopComerce.user.UserOrdersPageObject;
-import pageObjects.nopComerce.user.UserRewardPointsPageObject;
 import pageUIs.jQuery.uploadPageUI.jQueryUploadPageUI;
 import pageUIs.nopCommerce.user.BasePageUI;
 
@@ -557,6 +554,11 @@ public class BasePage {
 	public UserHomePageObject getUserHomePage(WebDriver driver, String urlUserHomePage) {
 		openUrl(driver, urlUserHomePage);
 		return pageObject.wordpress.PageGeneratorManager.getUserHomePage(driver);
+	}
+
+	public AdminDashboardPO getAdminPage(WebDriver driver, String urlAdminPage) {
+		openUrl(driver, urlAdminPage);
+		return pageObject.wordpress.PageGeneratorManager.getAdminDashboardPage(driver);
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIME_OUT;

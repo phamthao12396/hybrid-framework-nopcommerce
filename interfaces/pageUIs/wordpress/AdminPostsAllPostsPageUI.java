@@ -6,4 +6,5 @@ public class AdminPostsAllPostsPageUI {
 	public static final String SEARCH_BUTTON = "XPATH=//input[@id='search-submit']";
 	public static final String TABLE_COLUMN_INDEX_BY_ID = "XPATH=//th[@id='%s']/preceding-sibling::*";
 	public static final String TABLE_ROW_VALUE_BY_COLUM_INDEX = "XPATH=//tbody[@id='the-list']//tr/*[%s]";
+	public static final String POST_LINK_BY_TITLE = "XPATH=//tbody[@id='the-list']//td[contains(@class,'page-title') ]//a[text()='%s']";
 }

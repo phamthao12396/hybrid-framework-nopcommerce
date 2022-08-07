@@ -21,21 +21,27 @@ public class AdminPostAddNewPO extends BasePage {
 		sendkeyToElement(driver, AdminPostAddNewPageUI.ADD_TITLE_TEXTAREA, postTitle);
 	}
 
-	public void inputToAddNewPostBody(String postBody) {
+	public void clickToAddNewPostBody() {
 		waitForElementVisible(driver, AdminPostAddNewPageUI.BODY_BUTTON);
 		clickToElement(driver, AdminPostAddNewPageUI.BODY_BUTTON);
+	}
+
+	public void inputToAddNewPostBody(String postBody) {
 		waitForElementVisible(driver, AdminPostAddNewPageUI.ADD_BODY_TEXTAREA);
 		sendkeyToElement(driver, AdminPostAddNewPageUI.ADD_BODY_TEXTAREA, postBody);
 	}
 
-	public void clickToPublishButton() {
-		waitForElemenClickable(driver, AdminPostAddNewPageUI.PUBLISH_BUTTON);
-		clickToElement(driver, AdminPostAddNewPageUI.PUBLISH_BUTTON);
+	public void clickToPublishOrUpdateButton() {
+		waitForElemenClickable(driver, AdminPostAddNewPageUI.PUBLISH_OR_UPDATE_BUTTON);
+		clickToElement(driver, AdminPostAddNewPageUI.PUBLISH_OR_UPDATE_BUTTON);
+	}
+
+	public void clickToPublishConfirmButton() {
 		waitForElemenClickable(driver, AdminPostAddNewPageUI.CONFIRM_PUBLISH_BUTTON);
 		clickToElement(driver, AdminPostAddNewPageUI.CONFIRM_PUBLISH_BUTTON);
 	}
 
-	public boolean isPublishedMessageDisplay(String message) {
+	public boolean isPublishedAndUpdatedMessageDisplay(String message) {
 		waitForElementVisible(driver, AdminPostAddNewPageUI.POST_PUBLISHED_SUCCESS_MESSAGE, message);
 		return isElementDisplay(driver, AdminPostAddNewPageUI.POST_PUBLISHED_SUCCESS_MESSAGE, message);
 	}

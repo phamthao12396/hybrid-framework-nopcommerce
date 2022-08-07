@@ -34,4 +34,10 @@ public class AdminPostsAllPostsPO extends BasePage {
 		return getElementText(driver, AdminPostsAllPostsPageUI.TABLE_ROW_VALUE_BY_COLUM_INDEX, String.valueOf(columnIndex));
 	}
 
+	public AdminPostAddNewPO clickToPostTitle(String postTitle) {
+		waitForElementVisible(driver, AdminPostsAllPostsPageUI.POST_LINK_BY_TITLE, postTitle);
+		clickToElement(driver, AdminPostsAllPostsPageUI.POST_LINK_BY_TITLE, postTitle);
+		return PageGeneratorManager.getAdminPostsAddNewPage(driver);
+	}
+
 }
