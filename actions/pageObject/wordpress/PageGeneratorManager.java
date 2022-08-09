@@ -28,4 +28,12 @@ public class PageGeneratorManager {
 	public static UserPostDetailPageObject getUserPostDetailPage(WebDriver driver) {
 		return new UserPostDetailPageObject(driver);
 	}
+
+	public static AdminPagesPO getAdminPagesPage(WebDriver driver) {
+		return new AdminPagesPO(driver);
+	}
+
+	public static AdminPagesAddNewPO getAdminPagesAddNewPage(WebDriver driver) {
+		return new AdminPagesAddNewPO(driver);
+	}
 }

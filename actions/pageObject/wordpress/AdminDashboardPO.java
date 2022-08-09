@@ -12,10 +12,9 @@ public class AdminDashboardPO extends BasePage {
 		this.driver = driver;
 	}
 
-	public AdminPostsAllPostsPO clickToPostsMenu() {
-		waitForElemenClickable(driver, AdminDashboardPageUI.MENU_POSTS);
-		clickToElement(driver, AdminDashboardPageUI.MENU_POSTS);
-		return PageGeneratorManager.getAdminPostsAllPostsPage(driver);
+	public void clickToMenuByText(String menuText) {
+		waitForElemenClickable(driver, AdminDashboardPageUI.MENU_BY_TEXT, menuText);
+		clickToElement(driver, AdminDashboardPageUI.MENU_BY_TEXT, menuText);
 	}
 
 }

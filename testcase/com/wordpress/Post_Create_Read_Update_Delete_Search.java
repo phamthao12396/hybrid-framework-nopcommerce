@@ -20,7 +20,7 @@ import pageObject.wordpress.PageGeneratorManager;
 import pageObject.wordpress.UserHomePageObject;
 import pageObject.wordpress.UserPostDetailPageObject;
 
-public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
+public class Post_Create_Read_Update_Delete_Search extends BaseTest {
 	WebDriver driver;
 	AdminPostAddNewPO postAddNewPage;
 	AdminLoginPageObject adminLoginPage;
@@ -62,7 +62,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	public void Post_01_Create() {
 		log.info("TC01_Create");
 		log.info("Create 01: click To 'Posts' menu");
-		adminAllPostsPage = dashboardPage.clickToPostsMenu();
+		dashboardPage.clickToMenuByText("Posts");
+		adminAllPostsPage = PageGeneratorManager.getAdminPostsAllPostsPage(driver);
 
 		urlAllPostsPage = dashboardPage.getPageURL(driver);
 
@@ -137,7 +138,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		dashboardPage = userDetailPost.getAdminPage(driver, urlAdminPage);
 
 		log.info("Update 02: click To 'Posts' menu");
-		adminAllPostsPage = dashboardPage.clickToPostsMenu();
+		dashboardPage.clickToMenuByText("Posts");
+		adminAllPostsPage = PageGeneratorManager.getAdminPostsAllPostsPage(driver);
 
 		log.info("Update 03: Input Text to search textbox: ");
 		adminAllPostsPage.inputToSearchTextbox(postTitle);
@@ -212,7 +214,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		dashboardPage = userDetailPost.getAdminPage(driver, urlAdminPage);
 
 		log.info("Delete 02: click To 'Posts' menu");
-		adminAllPostsPage = dashboardPage.clickToPostsMenu();
+		dashboardPage.clickToMenuByText("Posts");
+		adminAllPostsPage = PageGeneratorManager.getAdminPostsAllPostsPage(driver);
 
 		log.info("Delete 03: Input Text to search textbox: ");
 		adminAllPostsPage.inputToSearchTextbox(editTitle);
