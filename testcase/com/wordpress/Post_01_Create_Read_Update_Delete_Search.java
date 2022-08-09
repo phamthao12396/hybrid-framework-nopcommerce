@@ -208,6 +208,53 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 
 	@Test
 	public void Post_04_Delete() {
+		log.info("Delete 01: Open Admin site");
+		dashboardPage = userDetailPost.getAdminPage(driver, urlAdminPage);
+
+		log.info("Delete 02: click To 'Posts' menu");
+		adminAllPostsPage = dashboardPage.clickToPostsMenu();
+
+		log.info("Delete 03: Input Text to search textbox: ");
+		adminAllPostsPage.inputToSearchTextbox(editTitle);
+
+		log.info("Delete 04: Click to 'Search Posts' button ");
+		adminAllPostsPage.clickToSearchButton();
+
+		log.info("Delete 05: Verify Search Table contains title: '" + editTitle + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("title"), editTitle);
+
+		log.info("Delete 06: Verify Search Table contains Author: '" + author + "'");
+		Assert.assertEquals(adminAllPostsPage.getCellValueByID("author"), author);
+
+		log.info("Delete 07: Click to checkbox");
+		adminAllPostsPage.checktoCheckboxByTitle(editTitle);
+
+		log.info("Delete 08: click to dropdown and select action");
+		adminAllPostsPage.selectActionByText("Move to Trash");
+
+		log.info("Delete 09: click apply button");
+		adminAllPostsPage.clickToApplyButton();
+
+		log.info("Delete 10: Input Text to search textbox: ");
+		adminAllPostsPage.inputToSearchTextbox(editTitle);
+
+		log.info("Delete 11: Click to 'Search Posts' button ");
+		adminAllPostsPage.clickToSearchButton();
+
+		log.info("Delete 12: Verify Search Table contains text: 'No posts found.'");
+		Assert.assertTrue(adminAllPostsPage.isNoPostFoundMessageDisplay());
+
+		log.info("Delete 13: Open End User site");
+		userHomePage = adminAllPostsPage.getUserHomePage(driver, urlUserHomePage);
+
+		log.info("Delete 14: Input Text to search textbox: ");
+		userHomePage.inputToSearchTextbox(editTitle);
+
+		log.info("Delete 15: Click to 'Search Posts' button ");
+		userHomePage.clickToSearchButton();
+
+		log.info("Delete 16: Verify Post information undisplay at Home Page");
+		Assert.assertTrue(userHomePage.isNothingFoundMessageDisplay());
 
 	}
 

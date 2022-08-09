@@ -43,4 +43,9 @@ public class UserHomePageObject extends BasePage {
 		return isElementDisplay(driver, UserHomePageUI.SEARCH_RESULT_POST_PUBLISH_TIME, postTitle, currentDay);
 	}
 
+	public boolean isNothingFoundMessageDisplay() {
+		waitForElementVisible(driver, UserHomePageUI.NOTHING_FOUND_MESSAGE);
+		return isElementDisplay(driver, UserHomePageUI.NOTHING_FOUND_MESSAGE);
+	}
+
 }

@@ -40,4 +40,24 @@ public class AdminPostsAllPostsPO extends BasePage {
 		return PageGeneratorManager.getAdminPostsAddNewPage(driver);
 	}
 
+	public void checktoCheckboxByTitle(String postTitle) {
+		waitForElementVisible(driver, AdminPostsAllPostsPageUI.CHECKBOX_BY_TITLE_POST, postTitle);
+		checkToRadioOrCheckbox(driver, AdminPostsAllPostsPageUI.CHECKBOX_BY_TITLE_POST, postTitle);
+	}
+
+	public void selectActionByText(String action) {
+		waitForElementVisible(driver, AdminPostsAllPostsPageUI.SELECT_ACTION);
+		selectItemInDefaultDropdown(driver, AdminPostsAllPostsPageUI.SELECT_ACTION, action);
+	}
+
+	public void clickToApplyButton() {
+		waitForElemenClickable(driver, AdminPostsAllPostsPageUI.APPLY_BUTTON);
+		clickToElement(driver, AdminPostsAllPostsPageUI.APPLY_BUTTON);
+	}
+
+	public boolean isNoPostFoundMessageDisplay() {
+		waitForElementVisible(driver, AdminPostsAllPostsPageUI.NO_POSTS_FOUND_MESSAGE);
+		return isElementDisplay(driver, AdminPostsAllPostsPageUI.NO_POSTS_FOUND_MESSAGE);
+	}
+
 }

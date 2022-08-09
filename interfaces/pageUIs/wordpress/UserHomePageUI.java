@@ -6,4 +6,6 @@ public class UserHomePageUI {
 	public static final String SEARCH_RESULT_POST_TITLE = "xpath=//h2[@class='entry-title']/a[text()='%s']";
 	public static final String SEARCH_RESULT_POST_AUTHOR = "xpath=//h2[@class='entry-title'][a[text()='%s']]/following-sibling::div//span[@class='byline']//span[@class='author vcard']//a[text()='%s']";
 	public static final String SEARCH_RESULT_POST_PUBLISH_TIME = "xpath=//h2[@class='entry-title'][a[text()='%s']]/following-sibling::div//span[@class='posted-on']//time[contains(@class,'entry-date published') and text()='%s']";
+	public static final String NOTHING_FOUND_MESSAGE = "xpath=//section[@class='no-results not-found']//h1[text()='Nothing Found']";
+
 }
