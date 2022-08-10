@@ -36,4 +36,9 @@ public class AdminPagesPO extends BasePage {
 		return getElementText(driver, AdminPagesUI.CELL_VALUE_BY_INDEX, String.valueOf(number));
 	}
 
+	public void clickToPagesTitle(String pageName) {
+		waitForElemenClickable(driver, AdminPagesUI.PAGE_TITLE_BY_TEXT, pageName);
+		clickToElement(driver, AdminPagesUI.PAGE_TITLE_BY_TEXT, pageName);
+	}
+
 }

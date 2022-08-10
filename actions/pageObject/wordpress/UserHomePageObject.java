@@ -48,4 +48,15 @@ public class UserHomePageObject extends BasePage {
 		return isElementDisplay(driver, UserHomePageUI.NOTHING_FOUND_MESSAGE);
 	}
 
+	public boolean isPageNameDisplayOnMenu(String pageName) {
+		waitForElementVisible(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
+		return isElementDisplay(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
+	}
+
+	public UserPagesDetailPagePO clickToPageByPageName(String pageName) {
+		waitForElemenClickable(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
+		clickToElement(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
+		return PageGeneratorManager.getUserPagesDetailPage(driver);
+	}
+
 }

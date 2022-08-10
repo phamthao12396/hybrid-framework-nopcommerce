@@ -36,4 +36,8 @@ public class PageGeneratorManager {
 	public static AdminPagesAddNewPO getAdminPagesAddNewPage(WebDriver driver) {
 		return new AdminPagesAddNewPO(driver);
 	}
+
+	public static UserPagesDetailPagePO getUserPagesDetailPage(WebDriver driver) {
+		return new UserPagesDetailPagePO(driver);
+	}
 }
