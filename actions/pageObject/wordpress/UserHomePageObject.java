@@ -1,6 +1,9 @@
 package pageObject.wordpress;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
 import pageUIs.wordpress.UserHomePageUI;
@@ -51,6 +54,18 @@ public class UserHomePageObject extends BasePage {
 	public boolean isPageNameDisplayOnMenu(String pageName) {
 		waitForElementVisible(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
 		return isElementDisplay(driver, UserHomePageUI.MENU_ITEM_BY_TEXT, pageName);
+	}
+
+	public boolean isPageNameUnDisplayOnMenu(String pageName) {
+		boolean check = true;
+		List<WebElement> elements = getWebElements(driver, UserHomePageUI.ALL_MENU_ITEM);
+		waitForAllElementVisible(driver, elements);
+		for (WebElement webElement : elements) {
+			if (pageName.equals(webElement.getText())) {
+				check = false;
+			}
+		}
+		return check;
 	}
 
 	public UserPagesDetailPagePO clickToPageByPageName(String pageName) {

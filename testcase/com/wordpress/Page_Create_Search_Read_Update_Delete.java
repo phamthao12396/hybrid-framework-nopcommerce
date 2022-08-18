@@ -1,5 +1,7 @@
 package com.wordpress;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -37,8 +39,8 @@ public class Page_Create_Search_Read_Update_Delete extends BaseTest {
 		password = "automation";
 		pageName = "Menu Name " + randInt();
 		pageDetail = "Page detail " + randInt();
-		editPageName = "Menu Name " + randInt();
-		editPageDetail = "Page detail " + randInt();
+		editPageName = "Edit Page " + randInt();
+		editPageDetail = "Edit detail " + randInt();
 		publishedDate = getCurrentYear() + "/" + getCurrentMonth() + "/" + getCurrentDay();
 		driver = GetBrowserDriver(browserName, adminUrl);
 		log.info("Pre-Condition: Open Browser and Login Admin Page");
@@ -189,7 +191,51 @@ public class Page_Create_Search_Read_Update_Delete extends BaseTest {
 
 	@Test
 	public void TC04_Delete_Page() {
+		log.info("Delete 01: Open 'Pages' By url ");
+		adminAddNew.openUrl(driver, allPagesURL);
 
+		log.info("Delete 02: input category name to Search textbox: " + pageName);
+		adminPages.inputTextToSearchTextBox(editPageName);
+
+		log.info("Delete 03: click to Search Pages button ");
+		adminPages.clickToSearchButton();
+
+		log.info("Delete 04: Verify Search table contains Page name: " + editPageName);
+		Assert.assertEquals(adminPages.getCellValueByID("title"), editPageName);
+
+		log.info("Delete 05: Verify Search table contains author name: " + authorName);
+		Assert.assertEquals(adminPages.getCellValueByID("author"), authorName);
+
+		log.info("Delete 06: Verify Search table contains published date: " + publishedDate);
+		Assert.assertTrue(adminPages.getCellValueByID("date").contains(publishedDate));
+
+		log.info("Delete 07: Check to checkbox ");
+		adminPages.clickToCheckboxByText(editPageName);
+
+		log.info("Delete 08: click to dropdown and select option by text:'Move to Trash'");
+		adminPages.selectAtionByText("Move to Trash");
+
+		log.info("Delete 09: click apply button ");
+		adminPages.clickToApplyButton();
+
+		log.info("Delete 10: Delete success message ");
+		Assert.assertTrue(adminPages.isDeleteSuccessMessageDisplay());
+
+		log.info("Delete 11: input category name to Search textbox: " + editPageName);
+		adminPages.inputTextToSearchTextBox(editPageName);
+
+		log.info("Delete 12: click to Search Pages button ");
+		adminPages.clickToSearchButton();
+
+		log.info("Delete 13: Verify message 'No pages found.' is display");
+		Assert.assertTrue(adminPages.isSearchNotFoundMessageDisplay());
+
+		log.info("Delete 14: Open User Home Page ");
+		adminPages.getUserHomePage(driver, urlUserHomePage);
+		userHomePage = PageGeneratorManager.getUserHomePage(driver);
+
+		log.info("Delete 15: Verify Menu item not contains Page name: " + editPageName);
+		Assert.assertTrue(userHomePage.isPageNameUnDisplayOnMenu(editPageName));
 	}
 
 	@AfterClass(alwaysRun = true)

@@ -449,6 +449,10 @@ public class BasePage {
 		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(locatorType)));
 	}
 
+	public void waitForAllElementVisible(WebDriver driver, List<WebElement> elements) {
+		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.visibilityOfAllElements(elements));
+	}
+
 	public void waitForElementVisible(WebDriver driver, String locatorType, String... dynamicValue) {
 		(new WebDriverWait(driver, longTimeout)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(getDynamicXpath(locatorType, dynamicValue))));
 	}

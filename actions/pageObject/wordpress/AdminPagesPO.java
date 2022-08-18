@@ -41,4 +41,30 @@ public class AdminPagesPO extends BasePage {
 		clickToElement(driver, AdminPagesUI.PAGE_TITLE_BY_TEXT, pageName);
 	}
 
+	public void clickToCheckboxByText(String editPageName) {
+		waitForElemenClickable(driver, AdminPagesUI.CHECKBOX_BY_TITLE_NAME, editPageName);
+		checkToRadioOrCheckbox(driver, AdminPagesUI.CHECKBOX_BY_TITLE_NAME, editPageName);
+	}
+
+	public void selectAtionByText(String action) {
+		waitForElementVisible(driver, AdminPagesUI.SELECTOR_ACTION_TOP);
+		selectItemInDefaultDropdown(driver, AdminPagesUI.SELECTOR_ACTION_TOP, action);
+	}
+
+	public void clickToApplyButton() {
+		waitForElemenClickable(driver, AdminPagesUI.APPLY_BUTTON);
+		clickToElement(driver, AdminPagesUI.APPLY_BUTTON);
+
+	}
+
+	public boolean isSearchNotFoundMessageDisplay() {
+		waitForElementVisible(driver, AdminPagesUI.SEARCH_NOT_FOUND_MESSAGE);
+		return isElementDisplay(driver, AdminPagesUI.SEARCH_NOT_FOUND_MESSAGE);
+	}
+
+	public boolean isDeleteSuccessMessageDisplay() {
+		waitForElementVisible(driver, AdminPagesUI.DELETE_SUCCESS_MESSAGE);
+		return isElementDisplay(driver, AdminPagesUI.DELETE_SUCCESS_MESSAGE);
+	}
+
 }
