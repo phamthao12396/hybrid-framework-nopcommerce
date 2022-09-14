@@ -37,7 +37,7 @@ public class BaseTest {
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(options);
 		} else if (browser == BrowserList.CHROME) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -46,7 +46,7 @@ public class BaseTest {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		} else if (browser == BrowserList.EDGE) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
