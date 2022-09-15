@@ -3,7 +3,7 @@
 <suite parallel="false" name="NopCommerce">
 	<parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/" />
 	<test name="Run on Firefox">
-		<parameter name="browser" value="H_FIREFOX" />
+		<parameter name="browser" value="BRAVE" />
 		<classes>
 			<class name ="com.jQuery.Level_11_Upload_File" />
 		</classes>

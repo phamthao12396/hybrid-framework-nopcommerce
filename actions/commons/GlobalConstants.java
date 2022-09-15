@@ -13,5 +13,5 @@ public class GlobalConstants {
 	public static final String JAVA_VERSION = System.getProperty("java.version");
 	public static final long LONG_TIME_OUT = 30;
 	public static final long SHORT_TIME_OUT = 7;
-
+	public static final String OS_NAME = System.getProperty("os.name");
 }

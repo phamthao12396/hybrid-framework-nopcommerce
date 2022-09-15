@@ -50,6 +50,22 @@ public class BaseTest {
 		} else if (browser == BrowserList.EDGE) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+		} else if (browser == BrowserList.COCCOC) {
+			// Cốc cốc browser trừ đi 5 - 6 version ra chromedriver
+			WebDriverManager.chromedriver().driverVersion("104.0.5112.79").setup();
+			ChromeOptions chromeOptions = new ChromeOptions();
+			if (GlobalConstants.OS_NAME.startsWith("Windows")) {
+				chromeOptions.setBinary("C:\\Program Files\\CocCoc\\Browser\\Application\\browser.exe");
+			} else {
+				chromeOptions.setBinary("...");
+			}
+			driver = new ChromeDriver(chromeOptions);
+		} else if (browser == BrowserList.BRAVE) {
+			// Brave browser version nào dùng chromedriver version đó
+			WebDriverManager.chromedriver().driverVersion("104.0.5112.79").setup();
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+			driver = new ChromeDriver(chromeOptions);
 		} else {
 			throw new RuntimeException("This browser is not support");
 		}
