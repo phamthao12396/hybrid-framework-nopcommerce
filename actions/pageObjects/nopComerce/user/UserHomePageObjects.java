@@ -42,4 +42,10 @@ public class UserHomePageObjects extends BasePage {
 		clickToElement(driver, UserHomePageUIs.LOG_OUT_LINK);
 	}
 
+	public ComputerPageObject clickToPageByText(String menuPageTitle) {
+		waitForElementVisible(driver, UserHomePageUIs.DYNAMIC_MENU_PAGE_TITLE_BY_TEXT, menuPageTitle);
+		clickToElement(driver, UserHomePageUIs.DYNAMIC_MENU_PAGE_TITLE_BY_TEXT, menuPageTitle);
+		return PageGeneratorManager.getComputerPageObject(driver);
+	}
+
 }

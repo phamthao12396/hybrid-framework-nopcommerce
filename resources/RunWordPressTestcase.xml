@@ -12,7 +12,7 @@
 	<parameter name="urlAdmin" value="http://localhost/wp-admin/" />
 	<parameter name="urlUser" value="http://localhost/" />
 	<test name="Run on chrome">
-		<parameter name="browser" value="CHROME" />
+		<parameter name="browser" value="H_CHROME" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
 			<class name ="com.wordpress.Page_Create_Search_Read_Update_Delete" />

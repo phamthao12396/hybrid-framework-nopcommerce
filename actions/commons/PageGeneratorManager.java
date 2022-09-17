@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import pageObject.nopComerce.admin.AdminDashboardPage;
 import pageObject.nopComerce.admin.AdminLoginPage;
+import pageObjects.nopComerce.user.ComDesktopsPageObject;
+import pageObjects.nopComerce.user.ComputerPageObject;
 import pageObjects.nopComerce.user.UserAddressesPageObject;
 import pageObjects.nopComerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopComerce.user.UserHomePageObjects;
@@ -47,6 +49,14 @@ public class PageGeneratorManager {
 
 	public static AdminDashboardPage getAdminDashboardPage(WebDriver driver) {
 		return new AdminDashboardPage(driver);
+	}
+
+	public static ComDesktopsPageObject getComDesktopsPageObject(WebDriver driver) {
+		return new ComDesktopsPageObject(driver);
+	}
+
+	public static ComputerPageObject getComputerPageObject(WebDriver driver) {
+		return new ComputerPageObject(driver);
 	}
 
 }

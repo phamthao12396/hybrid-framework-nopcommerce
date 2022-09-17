@@ -2,14 +2,14 @@ package com.jQuery;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.jQuery.uploadFile.PageGeneratorManager;
 import pageObject.jQuery.uploadFile.JQueryUploadPage;
+import pageObject.jQuery.uploadFile.PageGeneratorManager;
 
 public class Level_11_Upload_File extends BaseTest {
 	WebDriver driver;
@@ -21,7 +21,7 @@ public class Level_11_Upload_File extends BaseTest {
 	String[] mutipleFile = { roseImg, lotusImg, catImg, dogImg };
 
 	@Parameters({ "browser", "url" })
-	@BeforeTest
+	@BeforeClass
 	public void BeforeTest(String browserName, String url) {
 		driver = GetBrowserDriver(browserName, url);
 		jQueryUploadPage = PageGeneratorManager.getJQueryUploadPage(driver);
@@ -53,7 +53,7 @@ public class Level_11_Upload_File extends BaseTest {
 
 	}
 
-	@AfterTest
+	@AfterClass
 	public void AfterClass() {
 		driver.quit();
 	}
