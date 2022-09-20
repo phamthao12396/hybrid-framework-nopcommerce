@@ -12,6 +12,10 @@
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<test name="Run on chrome">
 		<parameter name="browser" value="Chrome" />
+		<parameter name="firstName" value="Thi" />
+		<parameter name="lastName" value="Tracy" />
+		<parameter name="email" value="lala2109@hotus.com" />
+		<parameter name="password" value="123456abc" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
 			<class name ="com.nopcommerce.user.Level_20_Manage_Data_I" />
