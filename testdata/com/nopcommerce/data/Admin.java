@@ -1,4 +1,4 @@
-package com.data.nopcommerce;
+package com.nopcommerce.data;
 
 public class Admin {
 
