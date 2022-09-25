@@ -9,12 +9,13 @@
 		<listener class-name="commons.MethodListener" />
 	</listeners>
 	
-	<parameter name="url" value="https://demo.nopcommerce.com/" />
+	
 	<test name="Run on chrome">
 		<parameter name="browser" value="Chrome" />
+		<parameter name="url" value="https://demo.nopcommerce.com/" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
-			<class name ="com.nopcommerce.user.Level_20_Manage_Data_I" />
+			<class name ="com.nopcommerce.user.Level_20_Manage_Data_III" />
 		</classes>
 	</test>
 </suite>
