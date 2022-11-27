@@ -23,7 +23,7 @@ import pageObjects.nopComerce.user.UserRegisterPageObject;
 import pageObjects.nopComerce.user.UserRewardPointsPageObject;
 import utilities.DataFaker;
 
-public class Level_21_Multiple_Browser_Parameter extends BaseTest {
+public class Level_21_Multiple_Env_Parameter extends BaseTest {
 	private WebDriver driver;
 	private DataFaker dataFaker;
 	private String firstName, lastName, email, password;

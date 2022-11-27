@@ -14,7 +14,7 @@
 		<parameter name="browser" value="Chrome" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
-			<class name ="com.nopcommerce.user.Level_21_Multiple_Browser_Parameter" />
+			<class name ="com.nopcommerce.user.Level_21_Multiple_Env_Parameter" />
 		</classes>
 	</test>
 </suite>
