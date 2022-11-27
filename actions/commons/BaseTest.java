@@ -75,6 +75,28 @@ public class BaseTest {
 		return driver;
 	}
 
+	protected String getEnvironmentURL(String envName) {
+		String url = null;
+		EnvironmentList EnvList = EnvironmentList.valueOf(envName.toUpperCase());
+		switch (EnvList) {
+		case DEV:
+			url = "https://demo.nopcommerce.com/";
+			break;
+		case TESTING:
+			url = "https://tiki.vn/";
+			break;
+		case STAGING:
+			url = "https://shopee.vn/";
+			break;
+		case LIVE:
+			url = "https://www.lazada.vn/";
+			break;
+		default:
+			break;
+		}
+		return url;
+	}
+
 	protected boolean verifyTrue(boolean condition) {
 		boolean pass = true;
 		try {
