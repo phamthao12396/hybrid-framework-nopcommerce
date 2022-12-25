@@ -1,23 +1,10 @@
- [2022-08-10 01:50:54,317] Pre-Condition: Open Browser and Login Admin Page
- [2022-08-10 01:50:54,319] Pre-Condition: Input Username: phamthao12396
- [2022-08-10 01:50:54,507] Pre-Condition: Input Password: automation
- [2022-08-10 01:50:54,601] Pre-Condition: Click Login button
- [2022-08-10 01:50:56,797] Create 01: click to 'Pages'
- [2022-08-10 01:50:57,898] Create 01:get allPagesURL
- [2022-08-10 01:50:57,903] Create 01: click to 'Add New' button and get 'AddNew' Page
- [2022-08-10 01:51:00,038] Create 03: close Dialog if appear
- [2022-08-10 01:51:00,336] Create 01: input Page Title
- [2022-08-10 01:51:00,692] Create 01: click to Category details
- [2022-08-10 01:51:00,940] Create 01: input Category details
- [2022-08-10 01:51:01,543] Create 01: click to 'Publish' button
- [2022-08-10 01:51:01,870] Create 01: click to 'Publish' confirm button
- [2022-08-10 01:51:02,039] Create 01: verify 'Page published.' meassage is display 
- [2022-08-10 01:51:03,642] Create 01: Open 'Pages' page 
- [2022-08-10 01:51:04,659] Create 01: input category name to Search textbox: Menu Name 76194
- [2022-08-10 01:51:04,773] Create 01: click to Search Pages button 
- [2022-08-10 01:51:06,470] Create 01: Verify Search table contains category name: Menu Name 76194
- [2022-08-10 01:51:06,511] Create 01: Verify Search table contains author name: Automation Study
- [2022-08-10 01:51:06,541] Create 01: Verify Search table contains published date: 2022/08/09
- [2022-08-10 01:51:06,568] Create 01: Open User Home Page 
- [2022-08-10 01:51:08,554] OS name = windows 10
- [2022-08-10 01:51:08,554] Driver instance name = chromedriver: chrome on windows (4e1cfc97a33082b08f7e9801530a3242)
+ [2022-12-26 01:51:10,480] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:51:10,483] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:51:10,691] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:51:10,794] Pre-Condition: Click Login button
+ [2022-12-26 01:51:11,755] Create 01: click to 'Users'
+ [2022-12-26 01:51:12,234] Create 02:get all users at UI
+ [2022-12-26 01:51:12,255] Create 03: get all users at DB
+ [2022-12-26 01:51:12,481] Create 04: verify User at UI and DB
+ [2022-12-26 01:51:12,483] OS name = windows 10
+ [2022-12-26 01:51:12,483] Driver instance name = chromedriver: chrome on windows (e1fd16997cd1aceaf9a017fd0bb3b4bd)

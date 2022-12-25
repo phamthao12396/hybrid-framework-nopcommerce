@@ -1178,3 +1178,786 @@
  [2022-08-10 01:51:06,568] Create 01: Open User Home Page 
  [2022-08-10 01:51:08,554] OS name = windows 10
  [2022-08-10 01:51:08,554] Driver instance name = chromedriver: chrome on windows (4e1cfc97a33082b08f7e9801530a3242)
+ [2022-08-10 23:55:33,915] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-10 23:55:33,918] Pre-Condition: Input Username: phamthao12396
+ [2022-08-10 23:55:34,117] Pre-Condition: Input Password: automation
+ [2022-08-10 23:55:34,209] Pre-Condition: Click Login button
+ [2022-08-10 23:55:37,553] Create 01: click to 'Pages'
+ [2022-08-10 23:55:38,669] Create 01:get allPagesURL
+ [2022-08-10 23:55:38,673] Create 01: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-10 23:55:41,201] Create 03: close Dialog if appear
+ [2022-08-10 23:55:41,345] Create 01: input Page Title
+ [2022-08-10 23:55:41,769] Create 01: click to Category details
+ [2022-08-10 23:55:42,023] Create 01: input Category details
+ [2022-08-10 23:55:42,642] Create 01: click to 'Publish' button
+ [2022-08-10 23:55:42,852] Create 01: click to 'Publish' confirm button
+ [2022-08-10 23:55:42,978] Create 01: verify 'Page published.' meassage is display 
+ [2022-08-10 23:55:44,746] Create 01: Open 'Pages' page 
+ [2022-08-10 23:55:45,728] Create 01: input category name to Search textbox: Menu Name 3724
+ [2022-08-10 23:55:45,841] Create 01: click to Search Pages button 
+ [2022-08-10 23:55:47,563] Create 01: Verify Search table contains category name: Menu Name 3724
+ [2022-08-10 23:55:47,603] Create 01: Verify Search table contains author name: Automation Study
+ [2022-08-10 23:55:47,631] Create 01: Verify Search table contains published date: 2022/08/10
+ [2022-08-10 23:55:47,660] Create 01: Open User Home Page 
+ [2022-08-10 23:55:48,764] Create 01: Verify Menu item contains Page name: Menu Name 3724
+ [2022-08-10 23:55:48,909] OS name = windows 10
+ [2022-08-10 23:55:48,909] Driver instance name = chromedriver: chrome on windows (7dc66db0a54ef02b09d8cbfe1de3cdc2)
+ [2022-08-10 23:57:38,715] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-10 23:57:38,717] Pre-Condition: Input Username: phamthao12396
+ [2022-08-10 23:57:38,894] Pre-Condition: Input Password: automation
+ [2022-08-10 23:57:38,989] Pre-Condition: Click Login button
+ [2022-08-10 23:57:41,186] Create 01: click to 'Pages'
+ [2022-08-10 23:57:42,292] Create 01:get allPagesURL
+ [2022-08-10 23:57:42,300] Create 01: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-10 23:57:44,480] Create 03: close Dialog if appear
+ [2022-08-10 23:57:44,776] Create 01: input Page Title
+ [2022-08-10 23:57:45,212] Create 01: click to Category details
+ [2022-08-10 23:57:45,470] Create 01: input Category details
+ [2022-08-10 23:57:46,035] Create 01: click to 'Publish' button
+ [2022-08-10 23:57:46,379] Create 01: click to 'Publish' confirm button
+ [2022-08-10 23:57:46,531] Create 01: verify 'Page published.' meassage is display 
+ [2022-08-10 23:57:48,082] Create 01: Open 'Pages' page 
+ [2022-08-10 23:57:49,081] Create 01: input category name to Search textbox: Menu Name 48845
+ [2022-08-10 23:57:49,194] Create 01: click to Search Pages button 
+ [2022-08-10 23:57:50,897] Create 01: Verify Search table contains category name: Menu Name 48845
+ [2022-08-10 23:57:50,938] Create 01: Verify Search table contains author name: Automation Study
+ [2022-08-10 23:57:50,966] Create 01: Verify Search table contains published date: 2022/08/10
+ [2022-08-10 23:57:50,994] Create 01: Open User Home Page 
+ [2022-08-10 23:57:52,021] Create 01: Verify Menu item contains Page name: Menu Name 48845
+ [2022-08-10 23:57:52,064] Create 01: click to Page name: Menu Name 48845
+ [2022-08-10 23:57:52,953] Create 01: Verify informations in 'Menu Name 48845'
+ [2022-08-10 23:57:53,066] OS name = windows 10
+ [2022-08-10 23:57:53,066] Driver instance name = chromedriver: chrome on windows (47d4aecb0c3280103e4fcddb29b2d7e4)
+ [2022-08-11 02:27:32,327] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-11 02:27:32,330] Pre-Condition: Input Username: phamthao12396
+ [2022-08-11 02:27:32,531] Pre-Condition: Input Password: automation
+ [2022-08-11 02:27:32,622] Pre-Condition: Click Login button
+ [2022-08-11 02:27:34,822] Create 01: click to 'Pages'
+ [2022-08-11 02:27:35,951] Create 02:get allPagesURL
+ [2022-08-11 02:27:35,957] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-11 02:27:38,252] Create 04: close Dialog if appear
+ [2022-08-11 02:27:38,436] Create 05: input Page Title
+ [2022-08-11 02:27:38,777] Create 06: click to Page details
+ [2022-08-11 02:27:39,007] Create 07: input Page details
+ [2022-08-11 02:27:39,570] Create 08: click to 'Publish' button
+ [2022-08-11 02:27:39,890] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:27:40,037] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-11 02:27:41,674] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:27:42,669] Search_And_View 02: input category name to Search textbox: Menu Name 86308
+ [2022-08-11 02:27:42,776] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:27:44,482] Search_And_View 04: Verify Search table contains category name: Menu Name 86308
+ [2022-08-11 02:27:44,521] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:27:44,549] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:27:44,577] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:27:45,767] Search_And_View 08: Verify Menu item contains Page name: Menu Name 86308
+ [2022-08-11 02:27:45,813] Search_And_View 09: click to Page name: Menu Name 86308
+ [2022-08-11 02:27:46,771] Search_And_View 10: Verify informations in 'Menu Name 86308'
+ [2022-08-11 02:27:46,851] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:27:47,763] Search_And_View 02: input category name to Search textbox: Menu Name 86308
+ [2022-08-11 02:27:47,878] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:27:49,564] Search_And_View 03: click to Page Title and Open 'Edit Pages' page
+ [2022-08-11 02:27:51,397] Search_And_View 03: Edit Page Title 
+ [2022-08-11 02:27:51,748] Search_And_View 03: Edit Page Detail 
+ [2022-08-11 02:27:52,486] Create 08: click to 'Publish' button
+ [2022-08-11 02:27:52,620] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:28:22,813] OS name = windows 10
+ [2022-08-11 02:28:22,813] Driver instance name = chromedriver: chrome on windows (dd19c24401a64b9d6de4477e3cdddcd8)
+ [2022-08-11 02:29:42,731] OS name = windows 10
+ [2022-08-11 02:29:42,734] Cannot invoke "Object.toString()" because "this.driver" is null
+ [2022-08-11 02:29:53,516] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-11 02:29:53,519] Pre-Condition: Input Username: phamthao12396
+ [2022-08-11 02:29:53,703] Pre-Condition: Input Password: automation
+ [2022-08-11 02:29:53,800] Pre-Condition: Click Login button
+ [2022-08-11 02:29:56,019] Create 01: click to 'Pages'
+ [2022-08-11 02:29:57,120] Create 02:get allPagesURL
+ [2022-08-11 02:29:57,125] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-11 02:29:59,234] Create 04: close Dialog if appear
+ [2022-08-11 02:29:59,533] Create 05: input Page Title
+ [2022-08-11 02:29:59,877] Create 06: click to Page details
+ [2022-08-11 02:30:00,131] Create 07: input Page details
+ [2022-08-11 02:30:00,699] Create 08: click to 'Publish' button
+ [2022-08-11 02:30:01,060] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:30:01,198] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-11 02:30:02,822] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:30:03,811] Search_And_View 02: input category name to Search textbox: Menu Name 74009
+ [2022-08-11 02:30:03,925] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:30:05,628] Search_And_View 04: Verify Search table contains category name: Menu Name 74009
+ [2022-08-11 02:30:05,664] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:30:05,693] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:30:05,723] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:30:06,850] Search_And_View 08: Verify Menu item contains Page name: Menu Name 74009
+ [2022-08-11 02:30:06,892] Search_And_View 09: click to Page name: Menu Name 74009
+ [2022-08-11 02:30:07,773] Search_And_View 10: Verify informations in 'Menu Name 74009'
+ [2022-08-11 02:30:07,873] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:30:08,811] Search_And_View 02: input category name to Search textbox: Menu Name 74009
+ [2022-08-11 02:30:08,922] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:30:10,598] Search_And_View 03: click to Page Title and Open 'Edit Pages' page
+ [2022-08-11 02:30:12,410] Search_And_View 03: Edit Page Title 
+ [2022-08-11 02:30:12,761] Search_And_View 03: Edit Page Detail 
+ [2022-08-11 02:30:13,349] Create 08: click to 'Publish' button
+ [2022-08-11 02:30:13,510] Create 10: verify 'Page updated.' meassage is display 
+ [2022-08-11 02:30:14,815] Search_And_View 03: Open AllPagesURL 
+ [2022-08-11 02:30:45,034] OS name = windows 10
+ [2022-08-11 02:30:45,034] Driver instance name = chromedriver: chrome on windows (ee279d4b88ca8551846d50a2f698e062)
+ [2022-08-11 02:31:55,500] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-11 02:31:55,505] Pre-Condition: Input Username: phamthao12396
+ [2022-08-11 02:31:55,646] Pre-Condition: Input Password: automation
+ [2022-08-11 02:31:55,745] Pre-Condition: Click Login button
+ [2022-08-11 02:31:58,035] Create 01: click to 'Pages'
+ [2022-08-11 02:31:59,177] Create 02:get allPagesURL
+ [2022-08-11 02:31:59,185] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-11 02:32:01,383] Create 04: close Dialog if appear
+ [2022-08-11 02:32:01,732] Create 05: input Page Title
+ [2022-08-11 02:32:02,076] Create 06: click to Page details
+ [2022-08-11 02:32:02,299] Create 07: input Page details
+ [2022-08-11 02:32:02,939] Create 08: click to 'Publish' button
+ [2022-08-11 02:32:03,285] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:32:03,419] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-11 02:32:04,943] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:32:05,994] Search_And_View 02: input category name to Search textbox: Menu Name 26138
+ [2022-08-11 02:32:06,109] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:32:07,816] Search_And_View 04: Verify Search table contains category name: Menu Name 26138
+ [2022-08-11 02:32:07,854] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:32:07,883] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:32:07,912] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:32:09,012] Search_And_View 08: Verify Menu item contains Page name: Menu Name 26138
+ [2022-08-11 02:32:09,064] Search_And_View 09: click to Page name: Menu Name 26138
+ [2022-08-11 02:32:09,981] Search_And_View 10: Verify informations in 'Menu Name 26138'
+ [2022-08-11 02:32:10,058] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:32:10,979] Search_And_View 02: input category name to Search textbox: Menu Name 26138
+ [2022-08-11 02:32:11,116] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:32:12,771] Search_And_View 03: click to Page Title and Open 'Edit Pages' page
+ [2022-08-11 02:32:14,604] Search_And_View 03: Edit Page Title 
+ [2022-08-11 02:32:14,960] Search_And_View 03: Edit Page Detail 
+ [2022-08-11 02:32:15,671] Create 08: click to 'Publish' button
+ [2022-08-11 02:32:15,891] Create 10: verify 'Page updated.' meassage is display 
+ [2022-08-11 02:32:17,236] Search_And_View 03: Open AllPagesURL 
+ [2022-08-11 02:32:18,226] Search_And_View 04: Verify Search table contains Page name: Menu Name 68304
+ [2022-08-11 02:32:18,437] OS name = windows 10
+ [2022-08-11 02:32:18,438] Driver instance name = chromedriver: chrome on windows (45c9730c7016e9008b274e57ef8d80a5)
+ [2022-08-11 02:33:43,187] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-11 02:33:43,192] Pre-Condition: Input Username: phamthao12396
+ [2022-08-11 02:33:43,331] Pre-Condition: Input Password: automation
+ [2022-08-11 02:33:43,440] Pre-Condition: Click Login button
+ [2022-08-11 02:33:46,201] Create 01: click to 'Pages'
+ [2022-08-11 02:33:47,381] Create 02:get allPagesURL
+ [2022-08-11 02:33:47,385] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-11 02:33:49,807] Create 04: close Dialog if appear
+ [2022-08-11 02:33:50,212] Create 05: input Page Title
+ [2022-08-11 02:33:50,634] Create 06: click to Page details
+ [2022-08-11 02:33:50,911] Create 07: input Page details
+ [2022-08-11 02:33:51,594] Create 08: click to 'Publish' button
+ [2022-08-11 02:33:51,940] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:33:52,104] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-11 02:33:53,564] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:33:54,568] Search_And_View 02: input category name to Search textbox: Menu Name 17311
+ [2022-08-11 02:33:54,680] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:33:56,463] Search_And_View 04: Verify Search table contains category name: Menu Name 17311
+ [2022-08-11 02:33:56,501] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:33:56,531] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:33:56,561] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:33:57,753] Search_And_View 08: Verify Menu item contains Page name: Menu Name 17311
+ [2022-08-11 02:33:57,804] Search_And_View 09: click to Page name: Menu Name 17311
+ [2022-08-11 02:33:59,055] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:34:00,022] Search_And_View 02: input category name to Search textbox: Menu Name 17311
+ [2022-08-11 02:34:00,150] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:34:01,927] Search_And_View 03: click to Page Title and Open 'Edit Pages' page
+ [2022-08-11 02:34:03,882] Search_And_View 03: Edit Page Title 
+ [2022-08-11 02:34:04,290] Search_And_View 03: Edit Page Detail 
+ [2022-08-11 02:34:04,963] Create 08: click to 'Publish' button
+ [2022-08-11 02:34:05,140] Create 10: verify 'Page updated.' meassage is display 
+ [2022-08-11 02:34:06,426] Search_And_View 03: Open AllPagesURL 
+ [2022-08-11 02:34:07,481] Search_And_View 02: input category name to Search textbox: Menu Name 17311
+ [2022-08-11 02:34:07,596] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:34:09,317] Search_And_View 04: Verify Search table contains Page name: Menu Name 44558
+ [2022-08-11 02:34:09,352] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:34:09,374] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:34:09,394] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:34:10,246] Search_And_View 08: Verify Menu item contains Page name: Menu Name 44558
+ [2022-08-11 02:34:10,283] Search_And_View 09: click to Page name: Menu Name 44558
+ [2022-08-11 02:34:11,538] OS name = windows 10
+ [2022-08-11 02:34:11,539] Driver instance name = chromedriver: chrome on windows (b7f02ee4c5c14930e8b25196b8ca27ce)
+ [2022-08-11 02:35:40,126] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-11 02:35:40,128] Pre-Condition: Input Username: phamthao12396
+ [2022-08-11 02:35:40,315] Pre-Condition: Input Password: automation
+ [2022-08-11 02:35:40,425] Pre-Condition: Click Login button
+ [2022-08-11 02:35:42,624] Create 01: click to 'Pages'
+ [2022-08-11 02:35:43,861] Create 02:get allPagesURL
+ [2022-08-11 02:35:43,866] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-11 02:35:46,086] Create 04: close Dialog if appear
+ [2022-08-11 02:35:46,447] Create 05: input Page Title
+ [2022-08-11 02:35:46,809] Create 06: click to Page details
+ [2022-08-11 02:35:47,046] Create 07: input Page details
+ [2022-08-11 02:35:47,691] Create 08: click to 'Publish' button
+ [2022-08-11 02:35:48,050] Create 09: click to 'Publish' confirm button
+ [2022-08-11 02:35:48,220] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-11 02:35:49,728] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:35:50,712] Search_And_View 02: input category name to Search textbox: Menu Name 23267
+ [2022-08-11 02:35:50,824] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:35:52,487] Search_And_View 04: Verify Search table contains category name: Menu Name 23267
+ [2022-08-11 02:35:52,525] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:35:52,551] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:35:52,578] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:35:53,617] Search_And_View 08: Verify Menu item contains Page name: Menu Name 23267
+ [2022-08-11 02:35:53,659] Search_And_View 09: click to Page name: Menu Name 23267
+ [2022-08-11 02:35:54,551] Search_And_View 10: Verify informations in 'Menu Name 23267'
+ [2022-08-11 02:35:54,653] Search_And_View 01: Open 'Pages' page 
+ [2022-08-11 02:35:55,625] Search_And_View 02: input category name to Search textbox: Menu Name 23267
+ [2022-08-11 02:35:55,754] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:35:57,452] Search_And_View 03: click to Page Title and Open 'Edit Pages' page
+ [2022-08-11 02:35:59,353] Search_And_View 03: Edit Page Title 
+ [2022-08-11 02:35:59,708] Search_And_View 03: Edit Page Detail 
+ [2022-08-11 02:36:00,424] Create 08: click to 'Publish' button
+ [2022-08-11 02:36:00,583] Create 10: verify 'Page updated.' meassage is display 
+ [2022-08-11 02:36:01,869] Search_And_View 03: Open AllPagesURL 
+ [2022-08-11 02:36:02,831] Search_And_View 02: input category name to Search textbox: Menu Name 23267
+ [2022-08-11 02:36:02,933] Search_And_View 03: click to Search Pages button 
+ [2022-08-11 02:36:04,599] Search_And_View 04: Verify Search table contains Page name: Menu Name 98850
+ [2022-08-11 02:36:04,630] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-11 02:36:04,654] Search_And_View 06: Verify Search table contains published date: 2022/08/10
+ [2022-08-11 02:36:04,676] Search_And_View 07: Open User Home Page 
+ [2022-08-11 02:36:05,489] Search_And_View 08: Verify Menu item contains Page name: Menu Name 98850
+ [2022-08-11 02:36:05,530] Search_And_View 09: click to Page name: Menu Name 98850
+ [2022-08-11 02:36:06,399] Search_And_View 10: Verify informations in 'Menu Name 98850'
+ [2022-08-11 02:36:06,473] OS name = windows 10
+ [2022-08-11 02:36:06,474] Driver instance name = chromedriver: chrome on windows (a4d7755c814888e21272b5936052b011)
+ [2022-08-18 20:37:52,866] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-18 20:37:52,868] Pre-Condition: Input Username: phamthao12396
+ [2022-08-18 20:37:53,088] Pre-Condition: Input Password: automation
+ [2022-08-18 20:37:53,194] Pre-Condition: Click Login button
+ [2022-08-18 20:38:02,398] Create 01: click to 'Pages'
+ [2022-08-18 20:38:03,978] Create 02:get allPagesURL
+ [2022-08-18 20:38:03,984] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-18 20:38:09,450] Create 04: close Dialog if appear
+ [2022-08-18 20:38:09,630] Create 05: input Page Title
+ [2022-08-18 20:38:09,963] Create 06: click to Page details
+ [2022-08-18 20:38:10,216] Create 07: input Page details
+ [2022-08-18 20:38:10,719] Create 08: click to 'Publish' button
+ [2022-08-18 20:38:11,003] Create 09: click to 'Publish' confirm button
+ [2022-08-18 20:38:11,168] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-18 20:38:13,079] Search_And_View 01: Open 'Pages' page 
+ [2022-08-18 20:38:14,046] Search_And_View 02: input category name to Search textbox: Menu Name 63894
+ [2022-08-18 20:38:14,159] Search_And_View 03: click to Search Pages button 
+ [2022-08-18 20:38:15,866] Search_And_View 04: Verify Search table contains category name: Menu Name 63894
+ [2022-08-18 20:38:15,904] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:38:15,932] Search_And_View 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:38:15,958] Search_And_View 07: Open User Home Page 
+ [2022-08-18 20:38:17,115] Search_And_View 08: Verify Menu item contains Page name: Menu Name 63894
+ [2022-08-18 20:38:17,159] Search_And_View 09: click to Page name: Menu Name 63894
+ [2022-08-18 20:38:18,070] Search_And_View 10: Verify informations in 'Menu Name 63894'
+ [2022-08-18 20:38:18,155] Update 01: Open 'Pages' page 
+ [2022-08-18 20:38:19,039] Update 02: input category name to Search textbox: Menu Name 63894
+ [2022-08-18 20:38:19,144] Update 03: click to Search Pages button 
+ [2022-08-18 20:38:20,820] Update 04: click to Page Title and Open 'Edit Pages' page
+ [2022-08-18 20:38:22,677] Update 05: Edit Page Title 
+ [2022-08-18 20:38:23,026] Update 06: Edit Page Detail 
+ [2022-08-18 20:38:23,646] Update 07: click to 'Publish' button
+ [2022-08-18 20:38:23,804] Update 08: verify 'Page updated.' meassage is display 
+ [2022-08-18 20:38:25,081] Update 09: Open AllPagesURL 
+ [2022-08-18 20:38:26,072] Update 10: input category name to Search textbox: Menu Name 63894
+ [2022-08-18 20:38:26,180] Update 11: click to Search Pages button 
+ [2022-08-18 20:38:27,822] Update 12: Verify Search table contains Page name: Menu Name 65130
+ [2022-08-18 20:38:27,858] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:38:27,882] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:38:27,903] Update 15: Open User Home Page 
+ [2022-08-18 20:38:28,748] Update 16: Verify Menu item contains Page name: Menu Name 65130
+ [2022-08-18 20:38:28,790] Update 17: click to Page name: Menu Name 65130
+ [2022-08-18 20:38:29,618] Update 18: Verify informations in 'Menu Name 65130'
+ [2022-08-18 20:38:29,692] Update 09: Open AllPagesURL 
+ [2022-08-18 20:38:30,634] Update 10: input category name to Search textbox: Menu Name 63894
+ [2022-08-18 20:38:30,796] Update 11: click to Search Pages button 
+ [2022-08-18 20:38:32,505] Update 12: Verify Search table contains Page name: Menu Name 65130
+ [2022-08-18 20:38:32,541] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:38:32,564] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:38:32,586] Update 15: Check to  checkbox 
+ [2022-08-18 20:38:34,143] Update 15: click to dropdown and select option by text 
+ [2022-08-18 20:39:04,333] OS name = windows 10
+ [2022-08-18 20:39:04,333] Driver instance name = chromedriver: chrome on windows (61f777f5f8fd3817a560d204483e3259)
+ [2022-08-18 20:47:15,022] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-18 20:47:15,024] Pre-Condition: Input Username: phamthao12396
+ [2022-08-18 20:47:15,210] Pre-Condition: Input Password: automation
+ [2022-08-18 20:47:15,307] Pre-Condition: Click Login button
+ [2022-08-18 20:47:17,505] Create 01: click to 'Pages'
+ [2022-08-18 20:47:18,644] Create 02:get allPagesURL
+ [2022-08-18 20:47:18,651] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-18 20:47:20,907] Create 04: close Dialog if appear
+ [2022-08-18 20:47:21,232] Create 05: input Page Title
+ [2022-08-18 20:47:21,608] Create 06: click to Page details
+ [2022-08-18 20:47:21,857] Create 07: input Page details
+ [2022-08-18 20:47:22,481] Create 08: click to 'Publish' button
+ [2022-08-18 20:47:22,741] Create 09: click to 'Publish' confirm button
+ [2022-08-18 20:47:22,881] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-18 20:47:24,663] Search_And_View 01: Open 'Pages' page 
+ [2022-08-18 20:47:25,618] Search_And_View 02: input category name to Search textbox: Menu Name 62839
+ [2022-08-18 20:47:25,735] Search_And_View 03: click to Search Pages button 
+ [2022-08-18 20:47:27,457] Search_And_View 04: Verify Search table contains category name: Menu Name 62839
+ [2022-08-18 20:47:27,497] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:47:27,525] Search_And_View 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:47:27,553] Search_And_View 07: Open User Home Page 
+ [2022-08-18 20:47:28,677] Search_And_View 08: Verify Menu item contains Page name: Menu Name 62839
+ [2022-08-18 20:47:28,719] Search_And_View 09: click to Page name: Menu Name 62839
+ [2022-08-18 20:47:29,627] Search_And_View 10: Verify informations in 'Menu Name 62839'
+ [2022-08-18 20:47:29,742] Update 01: Open 'Pages' page 
+ [2022-08-18 20:47:30,863] Update 02: input category name to Search textbox: Menu Name 62839
+ [2022-08-18 20:47:30,982] Update 03: click to Search Pages button 
+ [2022-08-18 20:47:32,746] Update 04: click to Page Title and Open 'Edit Pages' page
+ [2022-08-18 20:47:34,992] Update 05: Edit Page Title 
+ [2022-08-18 20:47:35,372] Update 06: Edit Page Detail 
+ [2022-08-18 20:47:36,082] Update 07: click to 'Publish' button
+ [2022-08-18 20:47:36,267] Update 08: verify 'Page updated.' meassage is display 
+ [2022-08-18 20:47:37,548] Update 09: Open AllPagesURL 
+ [2022-08-18 20:47:38,489] Update 10: input category name to Search textbox: Menu Name 62839
+ [2022-08-18 20:47:38,593] Update 11: click to Search Pages button 
+ [2022-08-18 20:47:40,276] Update 12: Verify Search table contains Page name: Menu Name 84666
+ [2022-08-18 20:47:40,311] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:47:40,335] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:47:40,359] Update 15: Open User Home Page 
+ [2022-08-18 20:47:41,164] Update 16: Verify Menu item contains Page name: Menu Name 84666
+ [2022-08-18 20:47:41,206] Update 17: click to Page name: Menu Name 84666
+ [2022-08-18 20:47:42,093] Update 18: Verify informations in 'Menu Name 84666'
+ [2022-08-18 20:47:42,205] Delete 01: Open 'Pages' By url 
+ [2022-08-18 20:47:43,202] Delete 02: input category name to Search textbox: Menu Name 62839
+ [2022-08-18 20:47:43,327] Delete 03: click to Search Pages button 
+ [2022-08-18 20:47:45,577] Delete 04: Verify Search table contains Page name: Menu Name 84666
+ [2022-08-18 20:47:45,615] Delete 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:47:45,657] Delete 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:47:45,681] Delete 07: Check to checkbox 
+ [2022-08-18 20:47:47,665] Delete 08: click to dropdown and select option by text:'Move to Trash'
+ [2022-08-18 20:48:17,895] OS name = windows 10
+ [2022-08-18 20:48:17,895] Driver instance name = chromedriver: chrome on windows (1c81536ce73f933f1b00cb97e305b1f4)
+ [2022-08-18 20:50:13,611] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-18 20:50:13,613] Pre-Condition: Input Username: phamthao12396
+ [2022-08-18 20:50:13,798] Pre-Condition: Input Password: automation
+ [2022-08-18 20:50:13,899] Pre-Condition: Click Login button
+ [2022-08-18 20:50:16,085] Create 01: click to 'Pages'
+ [2022-08-18 20:50:17,188] Create 02:get allPagesURL
+ [2022-08-18 20:50:17,194] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-18 20:50:19,361] Create 04: close Dialog if appear
+ [2022-08-18 20:50:19,684] Create 05: input Page Title
+ [2022-08-18 20:50:20,068] Create 06: click to Page details
+ [2022-08-18 20:50:20,313] Create 07: input Page details
+ [2022-08-18 20:50:20,893] Create 08: click to 'Publish' button
+ [2022-08-18 20:50:21,234] Create 09: click to 'Publish' confirm button
+ [2022-08-18 20:50:21,371] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-18 20:50:23,048] Search_And_View 01: Open 'Pages' page 
+ [2022-08-18 20:50:24,030] Search_And_View 02: input category name to Search textbox: Menu Name 41588
+ [2022-08-18 20:50:24,150] Search_And_View 03: click to Search Pages button 
+ [2022-08-18 20:50:25,847] Search_And_View 04: Verify Search table contains category name: Menu Name 41588
+ [2022-08-18 20:50:25,889] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:50:25,919] Search_And_View 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:50:25,950] Search_And_View 07: Open User Home Page 
+ [2022-08-18 20:50:26,997] Search_And_View 08: Verify Menu item contains Page name: Menu Name 41588
+ [2022-08-18 20:50:27,036] Search_And_View 09: click to Page name: Menu Name 41588
+ [2022-08-18 20:50:27,934] Search_And_View 10: Verify informations in 'Menu Name 41588'
+ [2022-08-18 20:50:28,051] Update 01: Open 'Pages' page 
+ [2022-08-18 20:50:29,003] Update 02: input category name to Search textbox: Menu Name 41588
+ [2022-08-18 20:50:29,129] Update 03: click to Search Pages button 
+ [2022-08-18 20:50:30,822] Update 04: click to Page Title and Open 'Edit Pages' page
+ [2022-08-18 20:50:32,698] Update 05: Edit Page Title 
+ [2022-08-18 20:50:33,046] Update 06: Edit Page Detail 
+ [2022-08-18 20:50:33,714] Update 07: click to 'Publish' button
+ [2022-08-18 20:50:33,861] Update 08: verify 'Page updated.' meassage is display 
+ [2022-08-18 20:50:35,163] Update 09: Open AllPagesURL 
+ [2022-08-18 20:50:36,141] Update 10: input category name to Search textbox: Menu Name 41588
+ [2022-08-18 20:50:36,244] Update 11: click to Search Pages button 
+ [2022-08-18 20:50:37,916] Update 12: Verify Search table contains Page name: Edit Page 84396
+ [2022-08-18 20:50:37,950] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:50:37,975] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:50:37,996] Update 15: Open User Home Page 
+ [2022-08-18 20:50:38,784] Update 16: Verify Menu item contains Page name: Edit Page 84396
+ [2022-08-18 20:50:38,826] Update 17: click to Page name: Edit Page 84396
+ [2022-08-18 20:50:39,636] Update 18: Verify informations in 'Edit Page 84396'
+ [2022-08-18 20:50:39,750] Delete 01: Open 'Pages' By url 
+ [2022-08-18 20:50:40,688] Delete 02: input category name to Search textbox: Menu Name 41588
+ [2022-08-18 20:50:40,818] Delete 03: click to Search Pages button 
+ [2022-08-18 20:50:42,546] Delete 04: Verify Search table contains Page name: Edit Page 84396
+ [2022-08-18 20:50:42,582] Delete 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:50:42,606] Delete 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:50:42,628] Delete 07: Check to checkbox 
+ [2022-08-18 20:50:42,702] Delete 08: click to dropdown and select option by text:'Move to Trash'
+ [2022-08-18 20:50:42,781] Delete 09: click apply button 
+ [2022-08-18 20:51:12,995] OS name = windows 10
+ [2022-08-18 20:51:12,995] Driver instance name = chromedriver: chrome on windows (f1136ee130a547669d2dac6954d38d3c)
+ [2022-08-18 20:52:50,284] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-18 20:52:50,287] Pre-Condition: Input Username: phamthao12396
+ [2022-08-18 20:52:50,463] Pre-Condition: Input Password: automation
+ [2022-08-18 20:52:50,573] Pre-Condition: Click Login button
+ [2022-08-18 20:52:52,763] Create 01: click to 'Pages'
+ [2022-08-18 20:52:53,898] Create 02:get allPagesURL
+ [2022-08-18 20:52:53,904] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-18 20:52:56,084] Create 04: close Dialog if appear
+ [2022-08-18 20:52:56,512] Create 05: input Page Title
+ [2022-08-18 20:52:56,892] Create 06: click to Page details
+ [2022-08-18 20:52:57,167] Create 07: input Page details
+ [2022-08-18 20:52:57,768] Create 08: click to 'Publish' button
+ [2022-08-18 20:52:58,102] Create 09: click to 'Publish' confirm button
+ [2022-08-18 20:52:58,243] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-18 20:52:59,708] Search_And_View 01: Open 'Pages' page 
+ [2022-08-18 20:53:00,698] Search_And_View 02: input category name to Search textbox: Menu Name 294
+ [2022-08-18 20:53:00,811] Search_And_View 03: click to Search Pages button 
+ [2022-08-18 20:53:02,520] Search_And_View 04: Verify Search table contains category name: Menu Name 294
+ [2022-08-18 20:53:02,560] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:53:02,588] Search_And_View 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:53:02,616] Search_And_View 07: Open User Home Page 
+ [2022-08-18 20:53:03,651] Search_And_View 08: Verify Menu item contains Page name: Menu Name 294
+ [2022-08-18 20:53:03,693] Search_And_View 09: click to Page name: Menu Name 294
+ [2022-08-18 20:53:04,639] Search_And_View 10: Verify informations in 'Menu Name 294'
+ [2022-08-18 20:53:04,715] Update 01: Open 'Pages' page 
+ [2022-08-18 20:53:05,635] Update 02: input category name to Search textbox: Menu Name 294
+ [2022-08-18 20:53:05,761] Update 03: click to Search Pages button 
+ [2022-08-18 20:53:07,456] Update 04: click to Page Title and Open 'Edit Pages' page
+ [2022-08-18 20:53:09,282] Update 05: Edit Page Title 
+ [2022-08-18 20:53:09,637] Update 06: Edit Page Detail 
+ [2022-08-18 20:53:10,295] Update 07: click to 'Publish' button
+ [2022-08-18 20:53:10,473] Update 08: verify 'Page updated.' meassage is display 
+ [2022-08-18 20:53:11,749] Update 09: Open AllPagesURL 
+ [2022-08-18 20:53:12,717] Update 10: input category name to Search textbox: Menu Name 294
+ [2022-08-18 20:53:12,817] Update 11: click to Search Pages button 
+ [2022-08-18 20:53:14,524] Update 12: Verify Search table contains Page name: Edit Page 27163
+ [2022-08-18 20:53:14,554] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:53:14,576] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:53:14,597] Update 15: Open User Home Page 
+ [2022-08-18 20:53:15,383] Update 16: Verify Menu item contains Page name: Edit Page 27163
+ [2022-08-18 20:53:15,424] Update 17: click to Page name: Edit Page 27163
+ [2022-08-18 20:53:16,279] Update 18: Verify informations in 'Edit Page 27163'
+ [2022-08-18 20:53:16,373] Delete 01: Open 'Pages' By url 
+ [2022-08-18 20:53:17,275] Delete 02: input category name to Search textbox: Menu Name 294
+ [2022-08-18 20:53:17,394] Delete 03: click to Search Pages button 
+ [2022-08-18 20:53:19,086] Delete 04: Verify Search table contains Page name: Edit Page 27163
+ [2022-08-18 20:53:19,121] Delete 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 20:53:19,144] Delete 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 20:53:19,166] Delete 07: Check to checkbox 
+ [2022-08-18 20:53:19,243] Delete 08: click to dropdown and select option by text:'Move to Trash'
+ [2022-08-18 20:53:19,324] Delete 09: click apply button 
+ [2022-08-18 20:53:21,028] Delete 10: input category name to Search textbox: Edit Page 27163
+ [2022-08-18 20:53:21,131] Delete 11: click to Search Pages button 
+ [2022-08-18 20:53:22,869] Delete 12: Delete success message 
+ [2022-08-18 20:53:53,099] OS name = windows 10
+ [2022-08-18 20:53:53,100] Driver instance name = chromedriver: chrome on windows (831ddb79634fce91e5596739d3075de7)
+ [2022-08-18 21:44:58,770] OS name = windows 10
+ [2022-08-18 21:44:58,772] Cannot invoke "Object.toString()" because "this.driver" is null
+ [2022-08-18 21:45:06,630] Pre-Condition: Open Browser and Login Admin Page
+ [2022-08-18 21:45:06,634] Pre-Condition: Input Username: phamthao12396
+ [2022-08-18 21:45:06,813] Pre-Condition: Input Password: automation
+ [2022-08-18 21:45:06,908] Pre-Condition: Click Login button
+ [2022-08-18 21:45:09,130] Create 01: click to 'Pages'
+ [2022-08-18 21:45:10,279] Create 02:get allPagesURL
+ [2022-08-18 21:45:10,285] Create 03: click to 'Add New' button and get 'AddNew' Page
+ [2022-08-18 21:45:12,596] Create 04: close Dialog if appear
+ [2022-08-18 21:45:12,743] Create 05: input Page Title
+ [2022-08-18 21:45:13,123] Create 06: click to Page details
+ [2022-08-18 21:45:13,373] Create 07: input Page details
+ [2022-08-18 21:45:13,934] Create 08: click to 'Publish' button
+ [2022-08-18 21:45:14,175] Create 09: click to 'Publish' confirm button
+ [2022-08-18 21:45:14,299] Create 10: verify 'Page published.' meassage is display 
+ [2022-08-18 21:45:16,005] Search_And_View 01: Open 'Pages' page 
+ [2022-08-18 21:45:16,959] Search_And_View 02: input category name to Search textbox: Menu Name 17257
+ [2022-08-18 21:45:17,078] Search_And_View 03: click to Search Pages button 
+ [2022-08-18 21:45:18,787] Search_And_View 04: Verify Search table contains category name: Menu Name 17257
+ [2022-08-18 21:45:18,825] Search_And_View 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 21:45:18,856] Search_And_View 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 21:45:18,884] Search_And_View 07: Open User Home Page 
+ [2022-08-18 21:45:19,906] Search_And_View 08: Verify Menu item contains Page name: Menu Name 17257
+ [2022-08-18 21:45:19,946] Search_And_View 09: click to Page name: Menu Name 17257
+ [2022-08-18 21:45:20,816] Search_And_View 10: Verify informations in 'Menu Name 17257'
+ [2022-08-18 21:45:20,893] Update 01: Open 'Pages' page 
+ [2022-08-18 21:45:22,430] Update 02: input category name to Search textbox: Menu Name 17257
+ [2022-08-18 21:45:22,546] Update 03: click to Search Pages button 
+ [2022-08-18 21:45:24,243] Update 04: click to Page Title and Open 'Edit Pages' page
+ [2022-08-18 21:45:26,068] Update 05: Edit Page Title 
+ [2022-08-18 21:45:26,395] Update 06: Edit Page Detail 
+ [2022-08-18 21:45:27,018] Update 07: click to 'Publish' button
+ [2022-08-18 21:45:27,183] Update 08: verify 'Page updated.' meassage is display 
+ [2022-08-18 21:45:28,454] Update 09: Open AllPagesURL 
+ [2022-08-18 21:45:29,405] Update 10: input category name to Search textbox: Menu Name 17257
+ [2022-08-18 21:45:29,511] Update 11: click to Search Pages button 
+ [2022-08-18 21:45:31,166] Update 12: Verify Search table contains Page name: Edit Page 3425
+ [2022-08-18 21:45:31,198] Update 13: Verify Search table contains author name: Automation Study
+ [2022-08-18 21:45:31,222] Update 14: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 21:45:31,245] Update 15: Open User Home Page 
+ [2022-08-18 21:45:32,030] Update 16: Verify Menu item contains Page name: Edit Page 3425
+ [2022-08-18 21:45:32,071] Update 17: click to Page name: Edit Page 3425
+ [2022-08-18 21:45:32,896] Update 18: Verify informations in 'Edit Page 3425'
+ [2022-08-18 21:45:32,971] Delete 01: Open 'Pages' By url 
+ [2022-08-18 21:45:33,834] Delete 02: input category name to Search textbox: Menu Name 17257
+ [2022-08-18 21:45:33,982] Delete 03: click to Search Pages button 
+ [2022-08-18 21:45:35,666] Delete 04: Verify Search table contains Page name: Edit Page 3425
+ [2022-08-18 21:45:35,701] Delete 05: Verify Search table contains author name: Automation Study
+ [2022-08-18 21:45:35,726] Delete 06: Verify Search table contains published date: 2022/08/18
+ [2022-08-18 21:45:35,750] Delete 07: Check to checkbox 
+ [2022-08-18 21:45:35,826] Delete 08: click to dropdown and select option by text:'Move to Trash'
+ [2022-08-18 21:45:35,905] Delete 09: click apply button 
+ [2022-08-18 21:45:37,527] Delete 10: Delete success message 
+ [2022-08-18 21:45:37,570] Delete 11: input category name to Search textbox: Edit Page 3425
+ [2022-08-18 21:45:37,665] Delete 12: click to Search Pages button 
+ [2022-08-18 21:45:39,281] Delete 13: Verify message 'No pages found.' is display
+ [2022-08-18 21:45:39,326] Delete 14: Open User Home Page 
+ [2022-08-18 21:45:40,104] Delete 15: Verify Menu item not contains Page name: Edit Page 3425
+ [2022-08-18 21:45:40,236] OS name = windows 10
+ [2022-08-18 21:45:40,236] Driver instance name = chromedriver: chrome on windows (271d311a13e79edb49a4abc3e5bfb234)
+ [2022-09-15 00:30:11,506] OS name = windows 10
+ [2022-09-15 00:30:11,508] Driver instance name = chromedriver: chrome on windows (989c2c2f198161eac545f2e82beb5644)
+ [2022-09-15 00:30:21,916] chrome not reachable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-5GQVG0D', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\THITHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51061}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 989c2c2f198161eac545f2e82beb5644
+ [2022-09-15 00:36:51,035] 0 screenshot has been deleted.
+ [2022-09-15 00:36:55,953] OS name = windows 10
+ [2022-09-15 00:36:55,953] Driver instance name = firefoxdriver: firefox on windows (d5748653-1852-4e46-8d14-3a2812167eb1)
+ [2022-09-17 23:05:30,220] 0 screenshot has been deleted.
+ [2022-09-17 23:05:40,209] Set cookie login and refresh page
+ [2022-09-17 23:05:40,233] TC01: Sort Data Asc by product name
+ [2022-09-17 23:05:40,233] Step 01: Click to Computers by text
+ [2022-09-17 23:06:12,032] OS name = windows 10
+ [2022-09-17 23:06:12,032] Driver instance name = chromedriver: chrome on windows (2098f328739a7240bec6caaa23a5b481)
+ [2022-09-17 23:07:28,573] 0 screenshot has been deleted.
+ [2022-09-17 23:07:36,626] Set cookie login and refresh page
+ [2022-09-17 23:07:36,649] TC01: Sort Data Asc by product name
+ [2022-09-17 23:07:36,649] Step 01: Click to Computers by text
+ [2022-09-17 23:08:26,807] OS name = windows 10
+ [2022-09-17 23:08:26,808] Driver instance name = chromedriver: chrome on windows (495acd4588eb9519c5b2461faaee6a89)
+ [2022-09-17 23:08:37,251] chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-5GQVG0D', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\THITHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 495acd4588eb9519c5b2461faaee6a89
+ [2022-09-17 23:20:01,409] 0 screenshot has been deleted.
+ [2022-09-17 23:20:10,265] Set cookie login and refresh page
+ [2022-09-17 23:20:10,293] TC01: Sort Data Asc by product name
+ [2022-09-17 23:20:10,293] Step 01: Click to Computers by text
+ [2022-09-17 23:20:42,081] OS name = windows 10
+ [2022-09-17 23:20:42,081] Driver instance name = chromedriver: chrome on windows (bea540119d5ab305e3377360e201dd6c)
+ [2022-09-17 23:26:46,745] 0 screenshot has been deleted.
+ [2022-09-17 23:26:54,958] Set cookie login and refresh page
+ [2022-09-17 23:26:54,981] Step 01: Click to Computers by text
+ [2022-09-17 23:26:56,643] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-17 23:26:57,093] Step 03: click to Sort by Name: A to Z
+ [2022-09-17 23:26:57,168] OS name = windows 10
+ [2022-09-17 23:26:57,168] Driver instance name = chromedriver: chrome on windows (2f4fca6f3e3867b131c1cfab5ec221b8)
+ [2022-09-17 23:27:09,830] 0 screenshot has been deleted.
+ [2022-09-17 23:27:18,478] Set cookie login and refresh page
+ [2022-09-17 23:27:18,501] Step 01: Click to Computers by text
+ [2022-09-17 23:27:19,457] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-17 23:27:19,911] Step 03: click to Sort by Name: A to Z
+ [2022-09-17 23:45:53,730] 0 screenshot has been deleted.
+ [2022-09-17 23:46:01,166] Set cookie login and refresh page
+ [2022-09-17 23:46:01,194] Step 01: Click to Computers by text
+ [2022-09-17 23:46:02,886] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-17 23:46:03,383] Step 03: click to Sort by Name: A to Z
+ [2022-09-17 23:46:03,458] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:00:33,475] 0 screenshot has been deleted.
+ [2022-09-18 00:00:42,200] Set cookie login and refresh page
+ [2022-09-18 00:00:42,228] Step 01: Click to Computers by text
+ [2022-09-18 00:00:43,990] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:00:44,440] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:00:44,512] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:00:44,548] Step 03: click to Sort by Name: z to a
+ [2022-09-18 00:00:44,624] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:05:23,030] 0 screenshot has been deleted.
+ [2022-09-18 00:05:30,276] Set cookie login and refresh page
+ [2022-09-18 00:05:30,300] Step 01: Click to Computers by text
+ [2022-09-18 00:05:31,993] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:05:32,440] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:05:32,511] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:05:32,546] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:05:32,606] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:10:18,421] 0 screenshot has been deleted.
+ [2022-09-18 00:10:27,755] Set cookie login and refresh page
+ [2022-09-18 00:10:27,780] Step 01: Click to Computers by text
+ [2022-09-18 00:10:29,493] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:10:29,958] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:10:30,034] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:10:30,069] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:10:30,128] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:15:43,188] 0 screenshot has been deleted.
+ [2022-09-18 00:15:51,971] Set cookie login and refresh page
+ [2022-09-18 00:15:51,994] Step 01: Click to Computers by text
+ [2022-09-18 00:15:53,681] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:15:54,135] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:15:54,204] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:15:54,239] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:15:54,297] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:17:14,165] 0 screenshot has been deleted.
+ [2022-09-18 00:17:22,875] Set cookie login and refresh page
+ [2022-09-18 00:17:22,901] Step 01: Click to Computers by text
+ [2022-09-18 00:17:23,799] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:17:24,259] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:17:24,331] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:17:24,368] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:17:24,427] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:19:48,533] 0 screenshot has been deleted.
+ [2022-09-18 00:19:58,000] Set cookie login and refresh page
+ [2022-09-18 00:19:58,027] Step 01: Click to Computers by text
+ [2022-09-18 00:19:59,948] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:20:00,648] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:20:00,724] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:20:00,773] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:20:00,838] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:29:03,663] 0 screenshot has been deleted.
+ [2022-09-18 00:29:12,551] Set cookie login and refresh page
+ [2022-09-18 00:29:12,580] Step 01: Click to Computers by text
+ [2022-09-18 00:29:13,537] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:29:13,977] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:29:14,048] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:29:14,085] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:29:14,145] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:33:27,479] 0 screenshot has been deleted.
+ [2022-09-18 00:33:36,312] Set cookie login and refresh page
+ [2022-09-18 00:33:36,335] Step 01: Click to Computers by text
+ [2022-09-18 00:33:39,821] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:33:41,435] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:33:41,518] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:33:41,553] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:33:41,612] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:37:02,650] 0 screenshot has been deleted.
+ [2022-09-18 00:37:12,879] Set cookie login and refresh page
+ [2022-09-18 00:37:12,901] Step 01: Click to Computers by text
+ [2022-09-18 00:37:14,792] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:37:15,313] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:37:17,392] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:37:17,431] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:37:19,498] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:37:19,537] Step 07: click to Sort by Price: High to Low
+ [2022-09-18 00:37:21,614] Step 08: verify the result sort by Price: High to Low
+ [2022-09-18 00:43:59,633] 0 screenshot has been deleted.
+ [2022-09-18 00:44:09,902] Set cookie login and refresh page
+ [2022-09-18 00:44:09,928] Step 01: Click to Computers by text
+ [2022-09-18 00:44:11,043] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:44:11,593] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:44:14,676] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:44:14,714] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:44:17,776] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:44:17,819] Step 07: click to Sort by Price: High to Low
+ [2022-09-18 00:44:20,892] Step 08: verify the result sort by Price: High to Low
+ [2022-09-18 00:51:25,934] 0 screenshot has been deleted.
+ [2022-09-18 00:51:35,362] Set cookie login and refresh page
+ [2022-09-18 00:51:35,385] Step 01: Click to Computers by text
+ [2022-09-18 00:51:37,594] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:51:38,145] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:51:41,223] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:51:41,262] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:51:44,343] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:51:44,397] Step 07: click to Sort by Price: High to Low
+ [2022-09-18 00:51:47,469] Step 08: verify the result sort by Price: High to Low
+ [2022-09-18 00:51:47,984] OS name = windows 10
+ [2022-09-18 00:51:47,984] Driver instance name = chromedriver: chrome on windows (ee15b5b2abfe66fbde42f12dfba61cf6)
+ [2022-09-18 00:52:43,138] 0 screenshot has been deleted.
+ [2022-09-18 00:52:52,338] Set cookie login and refresh page
+ [2022-09-18 00:52:52,366] Step 01: Click to Computers by text
+ [2022-09-18 00:52:54,573] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:52:55,139] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:52:58,217] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:52:58,256] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:53:01,327] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:53:01,373] Step 07: click to Sort by Price: High to Low
+ [2022-09-18 00:53:04,447] Step 08: verify the result sort by Price: High to Low
+ [2022-09-18 00:53:05,021] OS name = windows 10
+ [2022-09-18 00:53:05,021] Driver instance name = chromedriver: chrome on windows (3aee3ff04044a3b595e3e6d5718eb168)
+ [2022-09-18 00:54:28,480] 0 screenshot has been deleted.
+ [2022-09-18 00:54:38,537] Set cookie login and refresh page
+ [2022-09-18 00:54:38,566] Step 01: Click to Computers by text
+ [2022-09-18 00:54:42,739] Step 02: Navigate to Computers > Desktops by sublist text
+ [2022-09-18 00:54:44,575] Step 03: click to Sort by Name: A to Z
+ [2022-09-18 00:54:47,661] Step 04: verify the result sort by name A to Z
+ [2022-09-18 00:54:47,699] Step 05: click to Sort by Price: Low to High
+ [2022-09-18 00:54:50,774] Step 06: verify the result sort by Price: Low to High
+ [2022-09-18 00:54:50,819] Step 07: click to Sort by Price: High to Low
+ [2022-09-18 00:54:53,887] Step 08: verify the result sort by Price: High to Low
+ [2022-09-18 00:54:53,929] Step 09: click to Sort by Name: z to a
+ [2022-09-18 00:54:56,988] Step 10: verify the result sort by Name: Z to A
+ [2022-09-18 00:54:57,564] OS name = windows 10
+ [2022-09-18 00:54:57,564] Driver instance name = chromedriver: chrome on windows (754e53e0663c33e0d083210573c044f6)
+ [2022-09-18 00:55:35,608] 0 screenshot has been deleted.
+ [2022-09-18 00:55:35,623] OS name = windows 10
+ [2022-09-18 00:55:35,624] Cannot invoke "Object.toString()" because "this.driver" is null
+ [2022-09-20 22:20:20,712] OS name = windows 10
+ [2022-09-20 22:20:20,712] Driver instance name = chromedriver: chrome on windows (0f2e17fac912f2895ac0f71611d19f4c)
+ [2022-09-20 23:43:22,157] OS name = windows 10
+ [2022-09-20 23:43:22,158] Driver instance name = chromedriver: chrome on windows (6cc31dd42daf9c4b565e1fc5699524d4)
+ [2022-09-25 13:04:36,108] OS name = windows 10
+ [2022-09-25 13:04:36,108] Driver instance name = chromedriver: chrome on windows (7d080acdacdfd0c3d99b051c17fe6b6a)
+ [2022-09-25 13:23:28,949] OS name = windows 10
+ [2022-09-25 13:23:28,949] Driver instance name = chromedriver: chrome on windows (261538696e069b6f21f2d0fb612b237b)
+ [2022-09-25 23:31:28,445] OS name = windows 10
+ [2022-09-25 23:31:28,446] Driver instance name = chromedriver: chrome on windows (556ac05eee52319245faea4595bf66d1)
+ [2022-12-26 00:29:26,573] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 00:29:26,576] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 00:29:26,718] Pre-Condition: Input Password: 123123
+ [2022-12-26 00:29:26,806] Pre-Condition: Click Login button
+ [2022-12-26 00:29:28,540] Create 01: click to 'Users'
+ [2022-12-26 00:29:28,995] Create 02:get all users at UI
+ [2022-12-26 00:29:29,160] OS name = windows 10
+ [2022-12-26 00:29:29,160] Driver instance name = chromedriver: chrome on windows (3fed237b00373081578c0fbe24550490)
+ [2022-12-26 00:29:55,241] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 00:29:55,243] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 00:29:55,425] Pre-Condition: Input Password: 123123
+ [2022-12-26 00:29:55,526] Pre-Condition: Click Login button
+ [2022-12-26 00:29:56,453] Create 01: click to 'Users'
+ [2022-12-26 00:29:56,901] Create 02:get all users at UI
+ [2022-12-26 00:29:57,069] OS name = windows 10
+ [2022-12-26 00:29:57,070] Driver instance name = chromedriver: chrome on windows (614c2392315f689088d71b995620e9ac)
+ [2022-12-26 00:31:25,225] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 00:31:25,228] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 00:31:25,414] Pre-Condition: Input Password: 123123
+ [2022-12-26 00:31:25,512] Pre-Condition: Click Login button
+ [2022-12-26 00:31:26,467] Create 01: click to 'Users'
+ [2022-12-26 00:31:26,968] Create 02:get all users at UI
+ [2022-12-26 00:31:26,988] Create 03: get all users at DB
+ [2022-12-26 00:31:26,988] Create 04: verify User at UI and DB
+ [2022-12-26 00:31:27,126] OS name = windows 10
+ [2022-12-26 00:31:27,126] Driver instance name = chromedriver: chrome on windows (cb4ec9142acc31f054cf30c1edbeb9a4)
+ [2022-12-26 01:48:21,047] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:48:21,053] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:48:21,228] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:48:21,341] Pre-Condition: Click Login button
+ [2022-12-26 01:48:22,342] Create 01: click to 'Users'
+ [2022-12-26 01:48:22,902] Create 02:get all users at UI
+ [2022-12-26 01:48:22,922] Create 03: get all users at DB
+ [2022-12-26 01:48:23,127] Create 04: verify User at UI and DB
+ [2022-12-26 01:48:23,253] OS name = windows 10
+ [2022-12-26 01:48:23,253] Driver instance name = chromedriver: chrome on windows (2271fd2f95d90121eb06378fb5ff4607)
+ [2022-12-26 01:49:20,069] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:49:20,071] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:49:20,277] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:49:20,373] Pre-Condition: Click Login button
+ [2022-12-26 01:49:21,338] Create 01: click to 'Users'
+ [2022-12-26 01:49:21,813] Create 02:get all users at UI
+ [2022-12-26 01:49:21,832] Create 03: get all users at DB
+ [2022-12-26 01:49:22,053] Create 04: verify User at UI and DB
+ [2022-12-26 01:49:22,174] OS name = windows 10
+ [2022-12-26 01:49:22,175] Driver instance name = chromedriver: chrome on windows (e2b07f4b692f5d9feba44038d8aee580)
+ [2022-12-26 01:50:09,635] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:50:09,638] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:50:09,830] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:50:09,942] Pre-Condition: Click Login button
+ [2022-12-26 01:50:10,909] Create 01: click to 'Users'
+ [2022-12-26 01:50:11,409] Create 02:get all users at UI
+ [2022-12-26 01:50:11,428] Create 03: get all users at DB
+ [2022-12-26 01:50:11,649] Create 04: verify User at UI and DB
+ [2022-12-26 01:50:11,792] OS name = windows 10
+ [2022-12-26 01:50:11,792] Driver instance name = chromedriver: chrome on windows (90d10d5bcf507d9fee06c891e251b508)
+ [2022-12-26 01:50:48,675] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:50:48,678] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:50:48,881] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:50:48,978] Pre-Condition: Click Login button
+ [2022-12-26 01:50:49,993] Create 01: click to 'Users'
+ [2022-12-26 01:50:50,480] Create 02:get all users at UI
+ [2022-12-26 01:50:50,500] Create 03: get all users at DB
+ [2022-12-26 01:50:50,742] Create 04: verify User at UI and DB
+ [2022-12-26 01:50:50,879] OS name = windows 10
+ [2022-12-26 01:50:50,880] Driver instance name = chromedriver: chrome on windows (a685460a39e019d6daea18ca95f6c7ae)
+ [2022-12-26 01:51:10,480] Pre-Condition: Open Browser and Login Admin Page
+ [2022-12-26 01:51:10,483] Pre-Condition: Input Username: phamthao12396
+ [2022-12-26 01:51:10,691] Pre-Condition: Input Password: 123123
+ [2022-12-26 01:51:10,794] Pre-Condition: Click Login button
+ [2022-12-26 01:51:11,755] Create 01: click to 'Users'
+ [2022-12-26 01:51:12,234] Create 02:get all users at UI
+ [2022-12-26 01:51:12,255] Create 03: get all users at DB
+ [2022-12-26 01:51:12,481] Create 04: verify User at UI and DB
+ [2022-12-26 01:51:12,483] OS name = windows 10
+ [2022-12-26 01:51:12,483] Driver instance name = chromedriver: chrome on windows (e1fd16997cd1aceaf9a017fd0bb3b4bd)

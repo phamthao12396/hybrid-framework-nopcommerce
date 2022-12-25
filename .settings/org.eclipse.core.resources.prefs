@@ -1,3 +1,6 @@
 eclipse.preferences.version=1
 encoding//actions/commons/BaseTest.java=UTF-8
+encoding//actions/jdbcTest/JTDSConnUtils.java=UTF-8
+encoding//actions/jdbcTest/MySQLConnUtils.java=UTF-8
+encoding//actions/utilities/MySQLConnUtils.java=UTF-8
 encoding//testcase/com/jQuery/Level_10_Data_Table.java=UTF-8

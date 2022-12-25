@@ -35,7 +35,7 @@ public class Post_Create_Read_Update_Delete_Search extends BaseTest {
 	public void beforeClass(String browserName, String adminUrl) {
 		deleteAllFileInFolder();
 		urlAdminPage = adminUrl;
-		urlUserHomePage = "http://localhost/";
+		urlUserHomePage = "http://localhost:3000/";
 		username = "phamthao12396";
 		author = "Automation Study";
 		currentDay = getToday();

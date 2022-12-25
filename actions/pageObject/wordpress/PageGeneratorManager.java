@@ -40,4 +40,8 @@ public class PageGeneratorManager {
 	public static UserPagesDetailPagePO getUserPagesDetailPage(WebDriver driver) {
 		return new UserPagesDetailPagePO(driver);
 	}
+
+	public static AdminUsersPO getAdminUsersPage(WebDriver driver) {
+		return new AdminUsersPO(driver);
+	}
 }

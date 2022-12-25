@@ -1,7 +1,5 @@
 package com.wordpress;
 
-import static org.testng.Assert.assertTrue;
-
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -34,7 +32,7 @@ public class Page_Create_Search_Read_Update_Delete extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String adminUrl) {
 		authorName = "Automation Study";
-		urlUserHomePage = "http://localhost/";
+		urlUserHomePage = "http://localhost:3000/";
 		username = "phamthao12396";
 		password = "automation";
 		pageName = "Menu Name " + randInt();

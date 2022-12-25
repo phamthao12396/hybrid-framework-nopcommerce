@@ -9,13 +9,13 @@
 		<listener class-name="commons.MethodListener" />
 	</listeners>
 	
-	<parameter name="urlAdmin" value="http://localhost/wp-admin/" />
-	<parameter name="urlUser" value="http://localhost/" />
+	<parameter name="urlAdmin" value="http://localhost:3000/wp-admin/" />
+	<parameter name="urlUser" value="http://localhost:3000/" />
 	<test name="Run on chrome">
-		<parameter name="browser" value="H_CHROME" />
+		<parameter name="browser" value="CHROME" />
 		<classes>
 <!-- 			<class name ="com.nopcommerce.common.Register_Share_Cookie" /> -->
-			<class name ="com.wordpress.Page_Create_Search_Read_Update_Delete" />
+			<class name ="com.wordpress.User_Manage_With_DB" />
 		</classes>
 	</test>
 </suite>
